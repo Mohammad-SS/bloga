@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Mirrored from demo.serifly.com/cloudhub/html/home-domain-search.html by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 07 Nov 2020 13:30:45 GMT -->
+<head>
+    {% load static %}
+    <meta charset="UTF-8">
+    <title>{{ title }} </title>
+    <meta name="description" content="سرویس ارائه خبرگزاری هیئت کاراته استان قم">
+    <meta name="keywords" content="خبرگزاری , کاراته , قم , هیئت کاراته , هیئت کاراته قم">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <!-- Icons -->
+    <link rel="apple-touch-icon-precomposed" href="{% static 'main' %}/img/icons/apple-touch-icon.png">
+    <link rel="icon" href="{% static 'main' %}/img/icons/favicon.ico">
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="{% static 'main' %}/css/fontawesome.min.css">
+    <link rel="stylesheet" href="{% static 'main' %}/css/main.min.css">
+    {% block optional-css %}
+
+    {% endblock %}
+</head>
+<body class="footer-dark">
+<!-- Header -->
+<header id="header" class="header-dynamic header-shadow-scroll">
+    <div class="container">
+        <a class="logo" href="index.html">
+            <img src="{% static 'main' %}/img/logos/header-light.png" alt="">
+        </a>
+        <nav>
+            <ul class="nav-primary">
+                {#						<li>#}
+                {#							<a href="home.html">محصولات</a>#}
+                {#							<ul>#}
+                {#								<li>#}
+                {#									<a href="products-cloud-hosting.html">میزبانی ابری</a>#}
+                {#								</li>#}
+                {#								<li>#}
+                {#									<a href="products-cloud-servers.html">سرورهای ابری</a>#}
+                {#									<ul>#}
+                {#										<li>#}
+                {#											<a href="products-developer-cloud.html">توسعه دهنده ابری</a>#}
+                {#										</li>#}
+                {#										<li>#}
+                {#											<a href="products-custom-cloud.html"> ابر سفارشی </a>#}
+                {#										</li>#}
+                {#									</ul>#}
+                {#								</li>#}
+                {#								<li>#}
+                {#									<a href="products-dedicated-cloud.html"> ابر اختصاصی </a>#}
+                {#								</li>#}
+                {#								<li>#}
+                {#									<a href="products-block-storage.html"> بلوک ذخیره </a>#}
+                {#								</li>#}
+                {#								<li>#}
+                {#									<a href="products-anycast-dns.html"> شبکه Anycast  </a>#}
+                {#								</li>#}
+                {#								<li>#}
+                {#									<a href="products-ssl-certificates.html"> گواهینامه های SSL </a>#}
+                {#								</li>#}
+                {#								<li>#}
+                {#									<a href="products-domain-names.html"> نام دامنه </a>#}
+                {#								</li>#}
+                {#							</ul>#}
+                {#						</li>#}
+                {#						<li>#}
+                {#							<a href="features.html"> ویژگی ها </a>#}
+                {#							<ul>#}
+                {#								<li>#}
+                {#									<a href="index.html"> دموها </a>#}
+                {#									<ul>#}
+                {#										<li>#}
+                {#											<a href="home.html"> پیش فرض</a>#}
+                {#										</li>#}
+                {#										<li>#}
+                {#											<a href="home-large-slider.html"> اسلایدر بزرگ</a>#}
+                {#										</li>#}
+                {#										<li>#}
+                {#											<a href="home-light-header.html"> هِدِر روشن</a>#}
+                {#										</li>#}
+                {#										<li>#}
+                {#											<a href="home-single-page.html"> تک صفحه</a>#}
+                {#										</li>#}
+                {#										<li>#}
+                {#											<a href="home-light-slider.html"> اسلایدر روشن</a>#}
+                {#										</li>#}
+                {#										<li>#}
+                {#											<a href="home-product-slider.html"> اسلایدر محصول</a>#}
+                {#										</li>#}
+                {#										<li>#}
+                {#											<a href="home-user-onboarding.html"> تسهیل عملکرد کاربر</a>#}
+                {#										</li>#}
+                {#										<li>#}
+                {#											<a href="home-domain-search.html">جست و جوی دامنه</a>#}
+                {#										</li>#}
+                {#										<li>#}
+                {#											<a href="home-custom-color.html">رنگ سفارشی</a>#}
+                {#										</li>#}
+                {#									</ul>#}
+                {#								</li>#}
+                {#								<li>#}
+                {#									<a href="elements-other.html">عناصر</a>#}
+                {#									<ul>#}
+                {#										<li>#}
+                {#											<a href="blog-sidebar.html">نوارکناری وبلاگ</a>#}
+                {#										</li>#}
+                {#										<li>#}
+                {#											<a href="elements-columns.html"> ردیف های ستون </a>#}
+                {#										</li>#}
+                {#										<li>#}
+                {#											<a href="elements-sliders.html"> اسلایدرهای محتوا </a>#}
+                {#										</li>#}
+                {#										<li>#}
+                {#											<a href="elements-pricing.html"> گزینه های قیمت</a>#}
+                {#										</li>#}
+                {#										<li>#}
+                {#											<a href="elements-masonry.html"> ساختار شبکه</a>#}
+                {#										</li>#}
+                {#										<li>#}
+                {#											<a href="elements-forms.html"> ورودی های فرم</a>#}
+                {#										</li>#}
+                {#										<li>#}
+                {#											<a href="elements-tabs.html"> گروه های تب </a>#}
+                {#										</li>#}
+                {#										<li>#}
+                {#											<a href="elements-galleries.html">گالری ها</a>#}
+                {#										</li>#}
+                {#										<li>#}
+                {#											<a href="elements-other.html">دیگر</a>#}
+                {#										</li>#}
+                {#									</ul>#}
+                {#								</li>#}
+                {#							</ul>#}
+                {#						</li>#}
+                {#						<li>#}
+                {#							<a href="network.html">شبکه</a>#}
+                {#						</li>#}
+                {#						<li>#}
+                {#							<a href="about.html">کمپانی</a>#}
+                {#							<ul>#}
+                {#								<li>#}
+                {#									<a href="blog.html">وبلاگ</a>#}
+                {#								</li>#}
+                {#								<li>#}
+                {#									<a href="contact.html">تماس</a>#}
+                {#								</li>#}
+                {#							</ul>#}
+                {#						</li>#}
+                <li>
+                    <a class="button button-secondary" href="client-login.html">
+                        <i class="fas fa-lock icon-left"></i>ورود کلاینت
+                    </a>
+                </li>
+            </ul>
+            <ul class="nav-secondary">
+                <li>
+                    <a href="contact.html"><i class="fas fa-phone icon-left"></i>09137773377</a>
+                </li>
+                {#						<li>#}
+                {#							<a href="contact.html"><i class="fas fa-comment icon-left"></i>پشتیبانی</a>#}
+                {#						</li>#}
+                {#						<li>#}
+                {#							<a href="knowledge-base.html"><i class="fas fa-question-circle icon-left"></i> پایگاه دانش </a>#}
+                {#						</li>#}
+                {#						<li>#}
+                {#							<a href="service-status.html"><i class="fas fa-check icon-left"></i> وضعیت خدمات </a>#}
+                {#						</li>#}
+            </ul>
+        </nav>
+    </div>
+</header>
+{% block content %}
+
+{% endblock %}
+<!-- Footer -->
+<footer id="footer">
+    <section class="footer-primary">
+        <div class="container">
+            <div class="column-row">
+                <div class="column-33">
+                    <h5>
+                        درباره هیئت کاراته استان قم
+                    </h5>
+                    <p>
+                        لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است،
+                        چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی
+                        مورد نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد، کتابهای زیادی در شصت و سه
+                       <br>
+                        03137773377
+                    </p>
+                </div>
+                <div class="column-66">
+                    <div class="column-row align-right-top">
+                        <div class="column-25">
+                            <h5>
+                                متصل شوید
+                            </h5>
+                            <ul class="list-style-icon">
+                                <li>
+                                    <a href="#facebook"><i class="fab fa-facebook"></i>فیسبوک</a>
+                                </li>
+                                <li>
+                                    <a href="#twitter"><i class="fab fa-twitter"></i>توییتر</a>
+                                </li>
+                                <li>
+                                    <a href="#github"><i class="fab fa-github"></i>گیت هاب</a>
+                                </li>
+                                <li>
+                                    <a href="#xing"><i class="fab fa-xing"></i> زینگ </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="column-25">
+                            <h5>
+                                لیست 1
+                            </h5>
+                            <ul>
+                                <li>
+                                    <a href="products-cloud-hosting.html">لینک 1</a>
+                                </li>
+                                <li>
+                                    <a href="products-cloud-servers.html">لینک 2</a>
+                                </li>
+                                <li>
+                                    <a href="products-dedicated-cloud.html"> لینک 3 </a>
+                                </li>
+                                <li>
+                                    <a href="products-block-storage.html"> لینک 4 </a>
+                                </li>
+                                <li>
+                                    <a href="products-anycast-dns.html"> لینک 5 </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="column-25">
+                            <h5>
+                                لیست 2
+                            </h5>
+                            <ul>
+                                <li>
+                                    <a href="features.html"> لینک 1 </a>
+                                </li>
+                                <li>
+                                    <a href="network.html">لینک 2</a>
+                                </li>
+                                <li>
+                                    <a href="terms-of-service.html#privacy-policy"> لینک 3 </a>
+                                </li>
+                                <li>
+                                    <a href="terms-of-service.html"> لینک 4 </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="column-flex">
+                            <h5>
+                                لیست 3
+                            </h5>
+                            <ul>
+                                <li>
+                                    <a href="blog.html">لینک 1</a>
+                                </li>
+                                <li>
+                                    <a href="about.html">لینک 2</a>
+                                </li>
+                                <li>
+                                    <a href="contact.html">لینک 3</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="footer-secondary">
+        <div class="container">
+            <p>
+                حق کپی رایت برای &copy; سید محمد باقر عظیمی محفوظ است <br>
+                
+            </p>
+        </div>
+    </section>
+</footer>
+<!-- Scripts -->
+<script src="{% static 'main' %}/js/jquery.min.js"></script>
+<script src="{% static 'main' %}/js/headroom.min.js"></script>
+<script src="{% static 'main' %}/js/js.cookie.min.js"></script>
+<script src="{% static 'main' %}/js/imagesloaded.min.js"></script>
+<script src="{% static 'main' %}/js/bricks.min.js"></script>
+<script src="{% static 'main' %}/js/main.min.js"></script>
+{% block optional-js %}
+
+{% endblock %}
+</body>
+
+<!-- Mirrored from demo.serifly.com/cloudhub/html/home-domain-search.html by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 07 Nov 2020 13:30:45 GMT -->
+</html>

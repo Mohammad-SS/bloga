@@ -1,0 +1,970 @@
+<!DOCTYPE html>
+<html lang="en">
+	
+<!-- Mirrored from demo.serifly.com/cloudhub/html/home-light-slider.html by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 07 Nov 2020 13:30:44 GMT -->
+<head>
+    {% load static %}
+		<meta charset="UTF-8">
+		<title> قالب HTML هاستینگ و فناوری کِلودهاب</title>
+		<meta name="description" content="Cloudhub is a modern, responsive and easy to customize HTML template, perfectly suited for hosting and technology companies.">
+		<meta name="keywords" content="html template, responsive, retina, هاست ابری, technology, startup">
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+		<!-- Icons -->
+		<link rel="apple-touch-icon-precomposed" href="{% static 'main' %}/img/icons/apple-touch-icon.png">
+		<!-- Stylesheets -->
+		<link rel="stylesheet" href="{% static 'main' %}/css/fontawesome.min.css">
+		<link rel="stylesheet" href="{% static 'main' %}/css/main.min.css">
+	</head>
+	<body class="footer-color">
+		<!-- Header -->
+		<header id="header" class="header-dynamic header-light header-shadow-scroll">
+			<div class="container">
+				<a class="logo" href="index.html">
+					<img src="{% static 'main' %}/img/logos/header-color.png" alt="">
+				</a>
+				<nav>
+					<ul class="nav-primary">
+						<li>
+							<a href="home.html">محصولات</a>
+							<ul>
+								<li>
+									<a href="products-cloud-hosting.html">میزبانی ابری</a>
+								</li>
+								<li>
+									<a href="products-cloud-servers.html">سرورهای ابری</a>
+									<ul>
+										<li>
+											<a href="products-developer-cloud.html">توسعه دهنده ابری</a>
+										</li>
+										<li>
+											<a href="products-custom-cloud.html"> ابر سفارشی </a>
+										</li>
+									</ul>
+								</li>
+								<li>
+									<a href="products-dedicated-cloud.html"> ابر اختصاصی </a>
+								</li>
+								<li>
+									<a href="products-block-storage.html"> بلوک ذخیره </a>
+								</li>
+								<li>
+									<a href="products-anycast-dns.html"> شبکه Anycast  </a>
+								</li>
+								<li>
+									<a href="products-ssl-certificates.html"> گواهینامه های SSL </a>
+								</li>
+								<li>
+									<a href="products-domain-names.html"> نام دامنه </a>
+								</li>
+							</ul>
+						</li>
+						<li>
+							<a href="features.html"> ویژگی ها </a>
+							<ul>
+								<li>
+									<a href="index.html"> دموها </a>
+									<ul>
+										<li>
+											<a href="home.html"> پیش فرض</a>
+										</li>
+										<li>
+											<a href="home-large-slider.html"> اسلایدر بزرگ</a>
+										</li>
+										<li>
+											<a href="home-light-header.html"> هِدِر روشن</a>
+										</li>
+										<li>
+											<a href="home-single-page.html"> تک صفحه</a>
+										</li>
+										<li>
+											<a href="home-light-slider.html"> اسلایدر روشن</a>
+										</li>
+										<li>
+											<a href="home-product-slider.html"> اسلایدر محصول</a>
+										</li>
+										<li>
+											<a href="home-user-onboarding.html"> تسهیل عملکرد کاربر</a>
+										</li>
+										<li>
+											<a href="home-domain-search.html">جست و جوی دامنه</a>
+										</li>
+										<li>
+											<a href="home-custom-color.html">رنگ سفارشی</a>
+										</li>
+									</ul>
+								</li>
+								<li>
+									<a href="elements-other.html">عناصر</a>
+									<ul>
+										<li>
+											<a href="blog-sidebar.html">نوارکناری وبلاگ</a>
+										</li>
+										<li>
+											<a href="elements-columns.html"> ردیف های ستون </a>
+										</li>
+										<li>
+											<a href="elements-sliders.html"> اسلایدرهای محتوا </a>
+										</li>
+										<li>
+											<a href="elements-pricing.html"> گزینه های قیمت</a>
+										</li>
+										<li>
+											<a href="elements-masonry.html"> ساختار شبکه</a>
+										</li>
+										<li>
+											<a href="elements-forms.html"> ورودی های فرم</a>
+										</li>
+										<li>
+											<a href="elements-tabs.html"> گروه های تب </a>
+										</li>
+										<li>
+											<a href="elements-galleries.html">گالری ها</a>
+										</li>
+										<li>
+											<a href="elements-other.html">دیگر</a>
+										</li>
+									</ul>
+								</li>
+							</ul>
+						</li>
+						<li>
+							<a href="network.html">شبکه</a>
+						</li>
+						<li>
+							<a href="about.html">کمپانی</a>
+							<ul>
+								<li>
+									<a href="blog.html">وبلاگ</a>
+								</li>
+								<li>
+									<a href="contact.html">تماس</a>
+								</li>
+							</ul>
+						</li>
+						<li>
+							<a class="button button-secondary" href="client-login.html">
+								<i class="fas fa-lock icon-left"></i>ورود کلاینت
+							</a>
+						</li>
+					</ul>
+					<ul class="nav-secondary">
+						<li>
+							<a href="contact.html"><i class="fas fa-phone icon-left"></i>09137773377</a>
+						</li>
+						<li>
+							<a href="contact.html"><i class="fas fa-comment icon-left"></i>پشتیبانی</a>
+						</li>
+						<li>
+							<a href="knowledge-base.html"><i class="fas fa-question-circle icon-left"></i> پایگاه دانش </a>
+						</li>
+						<li>
+							<a href="service-status.html"><i class="fas fa-check icon-left"></i> وضعیت خدمات </a>
+						</li>
+					</ul>
+				</nav>
+			</div>
+		</header>
+		<!-- Content -->
+		<section id="content">
+			<!-- Content Row -->
+			<section class="content-row content-row-full-height content-row-border-bottom">
+				<div class="content-slider animate-container-slide" data-nav="true">
+					<div class="slide" data-title="میزبانی ابری">
+						<div class="container">
+							<header class="content-header content-header-large content-header-uppercase text-color-primary">
+								<h1>
+									میزبانی ابری مشترک
+								</h1>
+								<p>
+									میزبانی کامل سازمانی با پشتیبانی از غلبه بر خرابی و توازن بار ، فقط شروع کنید با<strong>9تومان/ماه</strong>
+								</p>
+							</header>
+							<div class="column-row align-center-bottom">
+								<div class="column-33">
+									<div class="product-box">
+										<div class="product-header">
+											<h4>
+												ابر راه انداز
+											</h4>
+											<p>
+												سایت های شخصی دارای بازدید متوسط
+											</p>
+										</div>
+										<div class="product-price">
+											9تومان<span class="term">/ ماه</span>
+										</div>
+										<div class="product-features">
+											<ul>
+												<li>
+													<strong>10</strong> دامنه های میزبان
+												</li>
+												<li>
+													<strong>25 GB</strong> ذخیره سازی RAID 10
+												</li>
+												<li>
+													<strong>200 GB</strong> پهنای باند ممتاز
+												</li>
+											</ul>
+											<ul>
+												<li>
+													طراحی شده توسط سی پنل&reg;
+												</li>
+												<li>
+													آدرس IP اختصاصی
+												</li>
+												<li>
+													99.95٪ SLA آپ تایم
+												</li>
+												<li>
+													1000 مگابیت uplink
+												</li>
+											</ul>
+										</div>
+										<div class="product-order">
+											<a class="button button-secondary" href="products-cloud-hosting.html#cloud-starter-monthly">
+												<i class="fas fa-shopping-cart icon-left"></i> اکنون سفارش دهید
+											</a>
+										</div>
+									</div>
+								</div>
+								<div class="column-33">
+									<div class="product-box product-box-popular">
+										<div class="product-popular">
+											محبوب ترین
+										</div>
+										<div class="product-header">
+											<h4>
+												ابر تجاری
+											</h4>
+											<p>
+												سایت های شرکتی پر بازدید
+											</p>
+										</div>
+										<div class="product-price">
+											18تومان<span class="term">/ ماه</span>
+										</div>
+										<div class="product-features">
+											<ul>
+												<li>
+													<strong>30</strong> دامنه های میزبان
+												</li>
+												<li>
+													<strong>75 GB</strong> ذخیره سازی RAID 10
+												</li>
+												<li>
+													<strong>600 GB</strong> پهنای باند ممتاز
+												</li>
+											</ul>
+											<ul>
+												<li>
+													طراحی شده توسط سی پنل&reg;
+												</li>
+												<li>
+													آدرس IP اختصاصی
+												</li>
+												<li>
+													99.95٪ SLA آپ تایم
+												</li>
+												<li>
+													1000 مگابیت uplink
+												</li>
+											</ul>
+										</div>
+										<div class="product-order">
+											<a class="button button-secondary" href="products-cloud-hosting.html#cloud-business-monthly">
+												<i class="fas fa-shopping-cart icon-left"></i> اکنون سفارش دهید
+											</a>
+										</div>
+									</div>
+								</div>
+								<div class="column-33">
+									<div class="product-box">
+										<div class="product-header">
+											<h4>
+												ابر سازمانی
+											</h4>
+											<p>
+												مدیریت محتوای سازمانی
+											</p>
+										</div>
+										<div class="product-price">
+											36تومان<span class="term">/ ماه</span>
+										</div>
+										<div class="product-features">
+											<ul>
+												<li>
+													<strong>60</strong> دامنه های میزبان
+												</li>
+												<li>
+													<strong>150 GB</strong> ذخیره سازی RAID 10
+												</li>
+												<li>
+													<strong>1200 GB</strong> پهنای باند ممتاز
+												</li>
+											</ul>
+											<ul>
+												<li>
+													طراحی شده توسط سی پنل&reg;
+												</li>
+												<li>
+													آدرس IP اختصاصی
+												</li>
+												<li>
+													99.95٪ SLA آپ تایم
+												</li>
+												<li>
+													1000 مگابیت uplink
+												</li>
+											</ul>
+										</div>
+										<div class="product-order">
+											<a class="button button-secondary" href="products-cloud-hosting.html#cloud-enterprise-monthly">
+												<i class="fas fa-shopping-cart icon-left"></i> اکنون سفارش دهید
+											</a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="slide" data-title="سرورهای ابری">
+						<div class="container">
+							<header class="content-header content-header-large content-header-uppercase text-color-primary">
+								<h1>
+									سرورهای ابری مجازی
+								</h1>
+								<p>
+									سرورهای ابر قدرتمند در زیرساخت های سازمانی با مجازی سازی KVM ، شروع فقط با <strong>19تومان/ماه</strong>
+								</p>
+							</header>
+							<div class="column-row align-center-bottom">
+								<div class="column-33">
+									<div class="product-box">
+										<div class="product-header">
+											<h4>
+												سروری ابری 2G
+											</h4>
+											<p>
+												28تومان / ساعت
+											</p>
+										</div>
+										<div class="product-price">
+											19تومان<span class="term">/ ماه</span>
+										</div>
+										<div class="product-features">
+											<ul>
+												<li>
+													<strong>2 GB</strong> حافظه ECC
+												</li>
+												<li>
+													<strong>2 Core</strong> پردازشگر اینتل&reg; 
+												</li>
+												<li>
+													<strong>20 GB</strong> ذخیره سازی SID RAID 10
+												</li>
+												<li>
+													<strong>1 TB</strong> پهنای باند ممتاز
+												</li>
+											</ul>
+											<ul>
+												<li>
+													با استفاده از تنظیم OpenStack&reg;
+												</li>
+												<li>
+													99.99% آپ تایم SLA
+												</li>
+												<li>
+													200 Mbit آپ لینک
+												</li>
+											</ul>
+										</div>
+										<div class="product-order">
+											<a class="button button-secondary" href="products-cloud-servers.html#cloud-server-2g-monthly">
+												<i class="fas fa-shopping-cart icon-left"></i> اکنون سفارش دهید
+											</a>
+										</div>
+									</div>
+								</div>
+								<div class="column-33">
+									<div class="product-box product-box-popular">
+										<div class="product-popular">
+											محبوب ترین
+										</div>
+										<div class="product-header">
+											<h4>
+												سرور ابری 4G
+											</h4>
+											<p>
+												56تومان / ساعت
+											</p>
+										</div>
+										<div class="product-price">
+											39تومان<span class="term">/ ماه</span>
+										</div>
+										<div class="product-features">
+											<ul>
+												<li>
+													<strong>4 GB</strong> حافظه ECC
+												</li>
+												<li>
+													<strong>4 Core</strong> پردازشگر اینتل&reg; 
+												</li>
+												<li>
+													<strong>40 GB</strong> ذخیره سازی SID RAID 10
+												</li>
+												<li>
+													<strong>2 TB</strong> پهنای باند ممتاز
+												</li>
+											</ul>
+											<ul>
+												<li>
+													با استفاده از تنظیم OpenStack&reg;
+												</li>
+												<li>
+													99.99% آپ تایم SLA
+												</li>
+												<li>
+													400 Mbit آپ لینک
+												</li>
+											</ul>
+										</div>
+										<div class="product-order">
+											<a class="button button-secondary" href="products-cloud-servers.html#cloud-server-4g-monthly">
+												<i class="fas fa-shopping-cart icon-left"></i> اکنون سفارش دهید
+											</a>
+										</div>
+									</div>
+								</div>
+								<div class="column-33">
+									<div class="product-box">
+										<div class="product-header">
+											<h4>
+												سرور ابری 8G
+											</h4>
+											<p>
+												112تومان / ساعت
+											</p>
+										</div>
+										<div class="product-price">
+											79تومان<span class="term">/ ماه</span>
+										</div>
+										<div class="product-features">
+											<ul>
+												<li>
+													<strong>8 GB</strong> حافظه ECC
+												</li>
+												<li>
+													<strong>6 Core</strong> پردازشگر اینتل&reg; 
+												</li>
+												<li>
+													<strong>80 GB</strong> ذخیره سازی SID RAID 10
+												</li>
+												<li>
+													<strong>4 TB</strong> پهنای باند ممتاز
+												</li>
+											</ul>
+											<ul>
+												<li>
+													با استفاده از تنظیم OpenStack&reg;
+												</li>
+												<li>
+													99.99% آپ تایم SLA
+												</li>
+												<li>
+													600 Mbit  آپ لینک
+												</li>
+											</ul>
+										</div>
+										<div class="product-order">
+											<a class="button button-secondary" href="products-cloud-servers.html#cloud-server-8g-monthly">
+												<i class="fas fa-shopping-cart icon-left"></i> اکنون سفارش دهید
+											</a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="slide" data-title = "ابر اختصاصی">
+						<div class="container">
+							<header class="content-header content-header-large content-header-uppercase text-color-primary">
+								<h1>
+									ابر خصوصی اختصاصی
+								</h1>
+								<p>
+									سرورهای ابری را با منابع اختصاصی و مجازی سازی KVM ، شروع  فقط با <strong>$199/month</strong>
+								</p>
+							</header>
+							<div class="column-row align-center-bottom">
+								<div class="column-33">
+									<div class="product-box">
+										<div class="product-header">
+											<h4>
+												ابر اختصاصی 16G
+											</h4>
+											<p>
+												میزبان حداکثر 8 ماشین مجازی
+											</p>
+										</div>
+										<div class="product-price">
+											199تومان<span class="term">/ ماه</span>
+										</div>
+										<div class="product-features">
+											<ul>
+												<li>
+													<strong>16 GB</strong> حافظه ECC
+												</li>
+												<li>
+													<strong>8 Core</strong> پردازشگر اینتل&reg; 
+												</li>
+												<li>
+													<strong>240 GB</strong> ذخیره سازی SID RAID 10
+												</li>
+												<li>
+													<strong>10 TB</strong> پهنای باند ممتاز
+												</li>
+											</ul>
+											<ul>
+												<li>
+													با استفاده از تنظیم OpenStack&reg;
+												</li>
+												<li>
+													100% آپ تایم SLA
+												</li>
+												<li>
+													2 Gbit آپ لینک
+												</li>
+											</ul>
+										</div>
+										<div class="product-order">
+											<a class="button button-secondary" href="products-dedicated-cloud.html#dedicated-cloud-16g-monthly">
+												<i class="fas fa-shopping-cart icon-left"></i> اکنون سفارش دهید
+											</a>
+										</div>
+									</div>
+								</div>
+								<div class="column-33">
+									<div class="product-box product-box-popular">
+										<div class="product-popular">
+											محبوب ترین
+										</div>
+										<div class="product-header">
+											<h4>
+												ابر اختصاصی 32G
+											</h4>
+											<p>
+												میزبان حداکثر 16 ماشین مجازی
+											</p>
+										</div>
+										<div class="product-price">
+											399تومان<span class="term">/ ماه</span>
+										</div>
+										<div class="product-features">
+											<ul>
+												<li>
+													<strong>32 GB</strong> حافظه ECC
+												</li>
+												<li>
+													<strong>16 Core</strong> پردازشگر اینتل&reg; 
+												</li>
+												<li>
+													<strong>480 GB</strong> ذخیره سازی SID RAID 10
+												</li>
+												<li>
+													<strong>20 TB</strong> پهنای باند ممتاز
+												</li>
+											</ul>
+											<ul>
+												<li>
+													با استفاده از تنظیم OpenStack&reg;
+												</li>
+												<li>
+													100% آپ تایم SLA
+												</li>
+												<li>
+													5 Gbit آپ لینک
+												</li>
+											</ul>
+										</div>
+										<div class="product-order">
+											<a class="button button-secondary" href="products-dedicated-cloud.html#dedicated-cloud-32g-monthly">
+												<i class="fas fa-shopping-cart icon-left"></i> اکنون سفارش دهید
+											</a>
+										</div>
+									</div>
+								</div>
+								<div class="column-33">
+									<div class="product-box">
+										<div class="product-header">
+											<h4>
+												ابر اختصاصی 64G
+											</h4>
+											<p>
+												میزبان حداکثر 32 ماشین مجازی
+											</p>
+										</div>
+										<div class="product-price">
+											799تومان<span class="term">/ ماه</span>
+										</div>
+										<div class="product-features">
+											<ul>
+												<li>
+													<strong>64 GB</strong> حافظه ECC
+												</li>
+												<li>
+													<strong>32 Core</strong> پردازشگر اینتل&reg; 
+												</li>
+												<li>
+													<strong>960 GB</strong> ذخیره سازی SID RAID 10
+												</li>
+												<li>
+													<strong>40 TB</strong> پهنای باند ممتاز
+												</li>
+											</ul>
+											<ul>
+												<li>
+													با استفاده از تنظیم OpenStack&reg;
+												</li>
+												<li>
+													100% آپ تایم SLA
+												</li>
+												<li>
+													10 Gbit آپ لینک
+												</li>
+											</ul>
+										</div>
+										<div class="product-order">
+											<a class="button button-secondary" href="products-dedicated-cloud.html#dedicated-cloud-64g-monthly">
+												<i class="fas fa-shopping-cart icon-left"></i> اکنون سفارش دهید
+											</a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="content-background">
+					<img src="{% static 'main' %}/uploads/clouds-gray.png" alt="">
+				</div>
+			</section>
+			<!-- Content Row -->
+			<section class="content-row content-row-gray">
+				<div class="container">
+					<header class="content-header">
+						<h2>
+							پلتفرم ابر سازمانی
+						</h2>
+						<p>
+							زیرساخت خدمات خود را بر روی سیستم عامل ابر کاملاً زائد و با عملکرد بالا مستقر کنید و از قابلیت اطمینان ، امنیت و سازمانی بالای آن بهره مند شوید.
+						</p>
+					</header>
+					<div class="column-row align-center-bottom text-align-center">
+						<div class="column-33">
+							<i class="fas fa-rocket icon-feature"></i>
+							<h3>
+								عملکرد بالا
+							</h3>
+							<p>
+								ما با پشتیبانی از Anycast و محافظت گسترده از DDoS یکی از پیشرفته ترین شبکه های 100 گیگابایتی را در جهان اداره می کنیم.
+							</p>
+							<p>
+								<a href="network.html">شبکه Anycast <i class="fas fa-angle-right icon-right"></i></a>
+							</p>
+						</div>
+						<div class="column-33">
+							<i class="fas fa-cloud icon-feature"></i>
+							<h3>
+کاملاً زائد
+							</h3>
+							<p>
+								بستر ابری ما 99.99٪ SLA uptime را با سخت افزار کامل و افزونگی شبکه برای آنلاین نگه داشتن خدمات شما ارائه می دهد.
+							</p>
+							<p>
+								<a href="network.html"> بستر ابری <i class="fas fa-angle-right icon-right"></i></a>
+							</p>
+						</div>
+						<div class="column-33">
+							<i class="fas fa-shield-alt icon-feature"></i>
+							<h3>
+زیرساخت امن
+</h3>
+							<p>
+								همه مراکز داده دارای درجه 4 هستند و از حفاظت پیشرفته در برابر آتش و نفوذ همراه با سخت افزار شبکه سازمانی پشتیبانی می کنند.
+							</p>
+							<p>
+								<a href="network.html"> مرکز داده جهانی <i class="fas fa-angle-right icon-right"></i></a>
+							</p>
+						</div>
+					</div>
+					<div class="column-row align-center-bottom text-align-center">
+						<div class="column-33">
+							<i class="fas fa-sync-alt icon-feature"></i>
+							<h3>
+								فعال سازی فوری
+							</h3>
+							<p>
+								تا زمانی که از یک حساب PayPal تأیید شده برای خرید خود استفاده می کنید ، محصول سفارش داده شده شما بطور خودکار و فوری فعال می شود.
+							</p>
+							<p>
+								<a href="home.html">محصولات ابر<i class="fas fa-angle-right icon-right"></i></a>
+							</p>
+						</div>
+						<div class="column-33">
+							<i class="fas fa-life-ring icon-feature"></i>
+							<h3>
+								پشتیبانی اختصاصی
+							</h3>
+							<p>
+								تیم پشتیبانی داخلی اختصاصی ما 24/7 در دسترس است تا به تمام مشکلات فنی که با هر یک از محصولات ما روبرو هستید پاسخ دهد.
+							</p>
+							<p>
+								<a href="contact.html"> پورتال پشتیبانی <i class="fas fa-angle-right icon-right"></i></a>
+							</p>
+						</div>
+						<div class="column-33">
+							<i class="fas fa-cog icon-feature"></i>
+							<h3>
+								اتوماسیون قدرتمند
+							</h3>
+							<p>
+								توسعه دهنده API ساده و بصری ما به شما امکان می دهد محصولات موجود را مدیریت کرده و گسترش دهید و همچنین سفارشات جدید را بدون تعامل ارسال کنید.
+							</p>
+							<p>
+								<a href="features.html"> راهنمای توسعه دهنده <i class="fas fa-angle-right icon-right"></i></a>
+							</p>
+						</div>
+					</div>
+				</div>
+			</section>
+			<!-- Content Row -->
+			<section class="content-row">
+				<div class="container">
+					<header class="content-header">
+						<h2>
+شبکه جهانی 100 گیگابایت
+</h2>
+						<p>
+							کلودهاب یک شبکه با تأخیر کم در سراسر جهان را ارائه می دهد ، شما را قادر می سازد زیرساخت های خدمات خود را در نزدیکی پایگاه مشتری خود مستقر کنید.
+						</p>
+					</header>
+					<div class="network-map">
+						<ul>
+							<li style="top: 42%; left: 12.5%;">
+								<a href="network.html"><span class="label-top-left">سان فرانسیسکو</span></a>
+							</li>
+							<li style="top: 44%; left: 20%;">
+								<a href="network.html"><span class="label-bottom-right">ایران</span></a>
+							</li>
+							<li style="top: 40%; left: 26%;">
+								<a href="network.html"><span class="label-top-right">نیویورک</span></a>
+							</li>
+							<li style="top: 78%; left: 34%;">
+								<a href="network.html"><span class="label-bottom-right"> سائو پائولو </span></a>
+							</li>
+							<li style="top: 41%; left: 44.5%;">
+								<a href="network.html"><span class="label-bottom-left"> لیسبون </span></a>
+							</li>
+							<li style="top: 32%; left: 46.5%;">
+								<a href="network.html"><span class="label-top-left"> لندن</span></a>
+							</li>
+							<li style="top: 34%; left: 49.5%;">
+								<a href="network.html"><span class="label-bottom-right"> فرانکفورت </span></a>
+							</li>
+							<li style="top: 64%; left: 75%;">
+								<a href="network.html"><span class="label-bottom-left"> سنگاپور </span></a>
+							</li>
+							<li style="top: 44%; left: 85%;">
+								<a href="network.html"><span class="label-bottom-right"> توکیو</span></a>
+							</li>
+							<li style="top: 83%; left: 89%;">
+								<a href="network.html"><span class="label-top-right"> سیدنی</span></a>
+							</li>
+						</ul>
+						<img src="{% static 'main' %}/img/layout/map-dark.svg" alt="">
+					</div>
+				</div>
+			</section>
+			<!-- Content Row -->
+			<section class="content-row content-row-gray">
+				<div class="container">
+					<header class="content-header">
+						<h2>
+آنچه مشتریان ما می گویند
+</h2>
+						<p>
+							ما به صدها مشتری با راه حل های سرور سفارشی کمک کرده ایم و به آنها امکان می دهیم بسیار کارآمدتر و راحت تر از گذشته عمل کنند.
+						</p>
+					</header>
+					<div class="column-row align-center-bottom">
+						<div class="column-33">
+							<div class="testimonial">
+								<p class="testimonial-content">
+									از زمانی که خدمات خود را به کلودهاب منتقل کردم ، مشتریان من حتی یک دقیقه خرابی را تجربه نکردند.
+								</p>
+								<p class="testimonial-author">
+									<a href="#twitter"><i class="fab fa-twitter icon-left"></i>کسری غفاری</a><br>
+									<small> صنایع شیمیایی </small>
+								</p>
+							</div>
+						</div>
+						<div class="column-33">
+							<div class="testimonial">
+								<p class="testimonial-content">
+									وقتی تجارت من با سرعت زیادی در حال رشد بود سیستم قدیمی من دیگر نمی توانست بار را تحمل کند ، کلودهاب به من در راه حل حرفه ای سرور سفارشی کمک کرد.
+								</p>
+								<p class="testimonial-author">
+									<a href="#twitter"><i class="fab fa-twitter icon-left"></i>پارسا اصیلان</a><br>
+									<small> شرکت جریان اصلی HQ </small>
+								</p>
+							</div>
+						</div>
+						<div class="column-33">
+							<div class="testimonial">
+								<p class="testimonial-content">
+									با جابجایی به سیستم شبکه Anycast  کلود هاب توانستیم تاخیر برنامه در سطح جهانی را بسیار کاهش دهیم.
+								</p>
+								<p class="testimonial-author">
+									<a href="#twitter"><i class="fab fa-twitter icon-left"></i>زینب پیرولی</a><br>
+									<small> راه حل های صورتحساب SAAS </small>
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<!-- Content Row -->
+			<section class="content-row content-row-color content-row-border-bottom">
+				<div class="container">
+					<header class="content-header">
+						<h2>
+به دنبال یک راه حل سفارشی هستید؟
+</h2>
+						<p>
+							تکنسین های ما می توانند بهترین راه حل های سفارشی موجود در بازار را به شما ارائه دهند ، مهم نیست که شما یک تجارت کوچک هستید یا یک شرکت بزرگ.<br><br>
+							<a class="button button-secondary" href="contact.html">
+								<i class="fas fa-envelope icon-left"></i>در تماس باشید
+							</a>
+						</p>
+					</header>
+				</div>
+			</section>
+		</section>
+		<!-- Footer -->
+		<footer id="footer">
+			<section class="footer-primary">
+				<div class="container">
+					<div class="column-row">
+						<div class="column-33">
+							<h5>
+								درباره کلودهاب
+							</h5>
+							<p>
+								ما راه حل های میزبانی شرکت ، سرویس دهنده و ذخیره سازی مبتنی بر ابر را با کیفیتی بی نظیر ارائه می دهیم. در صورت تمایل از یک پیشنهاد سفارشی بازدید کرده و یا با ما تماس بگیرید.<br><br>
+								ایران، اصفهان<br>
+								03137773377
+							</p>
+						</div>
+						<div class="column-66">
+							<div class="column-row align-right-top">
+								<div class="column-25">
+									<h5>
+متصل شوید
+</h5>
+									<ul class="list-style-icon">
+										<li>
+											<a href="#facebook"><i class="fab fa-facebook"></i>فیسبوک</a>
+										</li>
+										<li>
+											<a href="#twitter"><i class="fab fa-twitter"></i>توییتر</a>
+										</li>
+										<li>
+											<a href="#github"><i class="fab fa-github"></i>گیت هاب</a>
+										</li>
+										<li>
+											<a href="#xing"><i class="fab fa-xing"></i> زینگ </a>
+										</li>
+									</ul>
+								</div>
+								<div class="column-25">
+									<h5>
+										محصولات
+									</h5>
+									<ul>
+										<li>
+											<a href="products-cloud-hosting.html">میزبانی ابری</a>
+										</li>
+										<li>
+											<a href="products-cloud-servers.html">سرورهای ابری</a>
+										</li>
+										<li>
+											<a href="products-dedicated-cloud.html"> ابر اختصاصی </a>
+										</li>
+										<li>
+											<a href="products-block-storage.html"> بلوک ذخیره </a>
+										</li>
+										<li>
+											<a href="products-anycast-dns.html"> شبکه Anycast  </a>
+										</li>
+									</ul>
+								</div>
+								<div class="column-25">
+									<h5>
+										منابع
+									</h5>
+									<ul>
+										<li>
+											<a href="features.html"> ویژگی ها </a>
+										</li>
+										<li>
+											<a href="network.html">شبکه</a>
+										</li>
+										<li>
+											<a href="terms-of-service.html#privacy-policy"> سیاست حفظ حریم خصوصی </a>
+										</li>
+										<li>
+											<a href="terms-of-service.html"> شرایط خدمات </a>
+										</li>
+									</ul>
+								</div>
+								<div class="column-flex">
+									<h5>
+										کمپانی
+									</h5>
+									<ul>
+										<li>
+											<a href="blog.html">وبلاگ</a>
+										</li>
+										<li>
+											<a href="about.html">درباره</a>
+										</li>
+										<li>
+											<a href="contact.html">تماس</a>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="footer-secondary">
+				<div class="container">
+					<p>
+						حق کپی رایت برای &copy;  خانم کیانی محفوظ است <br>
+						طراحی شده توسط HTML5 ، توسعه یافته توسط <a href="https://www.rtl-theme.com/category/template-html/">راست چین</a>
+					</p>
+				</div>
+			</section>
+		</footer>
+		<!-- Scripts -->
+		<script src="{% static 'main' %}/js/jquery.min.js"></script>
+		<script src="{% static 'main' %}/js/headroom.min.js"></script>
+		<script src="{% static 'main' %}/js/js.cookie.min.js"></script>
+		<script src="{% static 'main' %}/js/imagesloaded.min.js"></script>
+		<script src="{% static 'main' %}/js/bricks.min.js"></script>
+		<script src="{% static 'main' %}/js/main.min.js"></script>
+	</body>
+
+<!-- Mirrored from demo.serifly.com/cloudhub/html/home-light-slider.html by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 07 Nov 2020 13:30:44 GMT -->
+</html>
