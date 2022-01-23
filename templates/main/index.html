@@ -13,46 +13,7 @@
     </section>
     <!-- Content -->
     <section id="content">
-        <!-- Content Row -->
-        <section class="content-row content-row-color content-row-clouds content-row-full-height">
-            <div class="container">
-                <header class="content-header content-header-large content-header-uppercase">
-                    <h1>
-                        <mark>نام</mark>
-                        خبرگزاری مورد نظر خود را جست و جو کنید
-                    </h1>
-                    <p>
-                        میتوانید نام خبرزگاری های مورد نظر خود را از فرم زیر جست و جو کنید . یا میتوانید از طریق همین
-                        فرم
-                        درخواست<span class="text-color-secondary"> ثبت خبرگزاری جدید </span> را بفرستید . خبرگزاری ها پس
-                        از
-                        تایید مدیریت فعال خواهند شد .
-                    </p>
-                </header>
-                <div class="column-row align-center">
-                    <div class="column-66">
-                        <form class="form-full-width" method="get"
-                              action="http://ontemp.ir/cloudhub-html/html/home-domain-search.html">
-                            <div class="group align-center form-row">
-                                <input class="group-stretch" type="text" name="domain"
-                                       placeholder="نام خبرگزاری یا آدرس انگلیسی خبرگزاری مورد نظر خود را وارد کنید">
-                                <button class="button-secondary"><i class="fas fa-search icon-left"></i>جستجو</button>
-                            </div>
-                        </form>
-                    </div>
-                </div>
-                <div class="column-row align-center">
-                    <div class="column-50">
-                        <p class="text-align-center">
-                            {#								<small class="text-color-gray">کلودهاب یک ثبت کننده معتبر ICANN است که خریدهای دامنه کاملاً خودکار از جمله محافظت از whois رایگان ، میزبانی ایمیل و مدیریت پیشرفته DNS را ارائه می دهد.</small>#}
-                        </p>
-                    </div>
-                </div>
-            </div>
-            <div class="content-background content-background-light">
-                <img src="{% static 'main' %}/uploads/banner-domain-search.jpg" alt="">
-            </div>
-        </section>
+        {% include "main/search-blog-section.html" %}
         <!-- Content Row -->
         {% if last_posts.count %}
             <section class="content-row content-row-gray">

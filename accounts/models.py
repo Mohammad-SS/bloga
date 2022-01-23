@@ -8,6 +8,9 @@ class Profile(models.Model):
     access = models.BooleanField(default=False)
     birth_date = models.DateField(null=True, blank=True)
 
+    def __str__(self):
+        return f"{self.user} - ({self.phone_number}) "
+
 
 def blog_media_uploader(instance, filename):
     return f"blogs/{instance.slug}/{filename}"
@@ -19,7 +22,8 @@ class Blog(models.Model):
     banner = models.ImageField(upload_to=blog_media_uploader)
     description = models.TextField()
     created_date = models.DateTimeField(auto_now_add=True)
-
+    def __str__(self):
+        return self.slug
 
 
 def media_uploader(instance, filename):
@@ -33,4 +37,5 @@ class Post(models.Model):
     title = models.TextField()
     image = models.ImageField(upload_to=media_uploader, blank=True, null=True)
     body = models.TextField()
-
+    def __str__(self):
+        return f"{self.title} - ({self.blog.slug}) "

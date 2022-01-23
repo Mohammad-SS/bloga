@@ -1,0 +1,60 @@
+{% extends "main/base.html" %}
+{% load static %}
+
+{% block content %}
+
+    <!-- Content -->
+    <section id="content">
+        <!-- Content Row -->
+        {% include "main/search-blog-section.html" %}
+        <!-- Content Row -->
+        <section id="alternative-extensions" class="content-row content-row-gray">
+            <div class="container">
+                <header class="content-header">
+                    <h2>
+                        خبرگزاری های مشابه آنچه جست و جو کردید
+                    </h2>
+                    <p>
+                        با توجه به آنچه جست و جو کردید ، وبلاگ های زیر پیدا شدند .برای جست و جوی بهتر ، میتوانید از نام
+                        کوتاه تر هیئت یا بنیاد مورد نظر استفاده کنید.
+                    </p>
+                </header>
+                {% if blogs.count %}
+                    <table class="table-layout-domain">
+                        {% for blog in blogs %}
+                            <tr>
+                                <td>
+                                    <h4>
+                                        {{ blog.slug }}
+                                    </h4>
+                                </td>
+                                <td class="highlight">
+                                    {{ blog.post_set.count }} پست
+                                </td>
+                                <td>
+                                    <a class="button button-secondary" href="">
+                                        مشاهده وبلاگ
+                                    </a>
+                                </td>
+                            </tr>
+                        {% endfor %}
+
+                    </table>
+                {% else %}
+                    <div class="column-row align-center">
+                        <div class="column-50 text-align-center">
+                            <p>
+                                <small class="text-color-gray">هیچ خبرگزاری با مشخصات جست و جو شده پیدا نشد . اگر به
+                                    دنبال ثبت این خبرگزاری هستید ، میتوانید از پنل کاربری خود درخواست ثبت آن را ارائه
+                                    دهید</small>
+                            </p>
+                        </div>
+                    </div>
+                {% endif %}
+
+
+            </div>
+        </section>
+        <!-- Content Row -->
+    </section>
+{% endblock %}
