@@ -26,5 +26,13 @@ class SearchBlog(View):
 class ShowBlog(View):
 
     def get(self , request , blog_slug , **kwargs):
+        if "page" in request.GET['page']:
+            page_number = request.GET['page']
+        else:
+            page_number = 1
+        posts_per_page = 10
         blog = get_object_or_404(models.Blog,slug=blog_slug)
-        return HttpResponse(blog_slug)
+        posts = blog.post_set.order_by("id")
+        total_pages = posts.count()/posts_per_page
+        posts = posts[::posts_per_page*page_number]
+        return render(request ,"blogs/index.html" , {"posts" : posts , "blog" : blog , "total_pages" : total_pages})
