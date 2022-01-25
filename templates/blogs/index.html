@@ -35,8 +35,9 @@
                                         <p>
                                             {{ post.body|slice:225 }} ...
                                         </p>
-{#                                        <small class="firstsmall"><a class="bg-green" href="category-01.html" title="">انتخابات</a></small>#}
-                                        <small><a href="single.html" title="">{{ post.persian_created_date }}</a></small>
+                                        {#                                        <small class="firstsmall"><a class="bg-green" href="category-01.html" title="">انتخابات</a></small>#}
+                                        <small><a href="single.html"
+                                                  title="">{{ post.persian_created_date }}</a></small>
                                     </div><!-- end meta -->
                                 </div><!-- end blog-box -->
                                 <hr class="invis">
@@ -52,9 +53,12 @@
                         <div class="col-md-12">
                             <nav aria-label="Page navigation">
                                 <ul class="pagination justify-content-start">
-                                    <li class="page-item"><a class="page-link" href="#">1</a></li>
-                                    <li class="page-item"><a class="page-link" href="#">2</a></li>
-                                    <li class="page-item"><a class="page-link" href="#">3</a></li>
+
+                                    {% for page in pages %}
+                                        <li class="page-item"><a class="page-link"
+                                                                 href="{% url 'blog-page' blog_slug=blog.slug %}?page={{ page|add:1 }}">{{ page|add:1 }}</a>
+                                        </li>
+                                    {% endfor %}
                                     <li class="page-item">
                                         <a class="page-link" href="#">صفحه بعد</a>
                                     </li>

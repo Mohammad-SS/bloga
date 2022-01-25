@@ -48,5 +48,4 @@ class Post(models.Model):
     @property
     def persian_created_date(self):
         date = jdt.GregorianToJalali(self.created_date.year, self.created_date.month, self.created_date.day)
-        time = self.created_date.time()
         return f"{date.jyear}/{date.jmonth}/{date.jday}"
