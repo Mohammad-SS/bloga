@@ -36,6 +36,7 @@ def media_uploader(instance, filename):
 
 class Post(models.Model):
     blog = models.ForeignKey(Blog, on_delete=models.CASCADE)
+    slug = models.CharField(max_length=150)
     created_date = models.DateTimeField()
     modified_date = models.DateTimeField(blank=True, null=True)
     title = models.TextField()

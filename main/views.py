@@ -39,3 +39,12 @@ class ShowBlog(View):
         start_point = (page_number - 1) * posts_per_page
         posts = posts[start_point: start_point + posts_per_page]
         return render(request, "blogs/index.html", {"posts": posts, "blog": blog, "pages": pages})
+
+
+class ShowPost(View):
+
+    def get(self, request, blog_slug, post_slug):
+        blog = get_object_or_404(models.Blog, slug=blog_slug)
+        post = blog.post_set.get(slug=post_slug)
+
+        return render(request, "blogs/post.html", {"blog": blog, "post": post})
