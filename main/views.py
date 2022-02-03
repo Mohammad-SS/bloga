@@ -47,4 +47,4 @@ class ShowPost(View):
         blog = get_object_or_404(models.Blog, slug=blog_slug)
         post = blog.post_set.get(slug=post_slug)
 
-        return render(request, "blogs/post.html", {"blog": blog, "post": post})
+        return render(request, "blogs/single.html", {"blog": blog, "post": post})

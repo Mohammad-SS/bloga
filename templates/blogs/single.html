@@ -1,0 +1,96 @@
+{% extends "blogs/base.html" %}
+
+{% load static %}
+
+{% block content %}
+<section class="section single-wrapper">
+    <div class="container my-custom-container">
+        <div class="row">
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                <div class="page-wrapper mainbox">
+                    <div class="blog-title-area text-center">
+                        <ol class="breadcrumb hidden-xs-down">
+                            <li class="breadcrumb-item"><a href="#">خانه</a></li>
+                            <li class="breadcrumb-item"><a href="#">بلاگ</a></li>
+                            <li class="breadcrumb-item active">لورم ایپسوم متن ساختگی با تولید سادگی</li>
+                        </ol>
+
+                        <span class="color-green"><a href="category-01.html" title="">انتخابات</a></span>
+
+                        <h3>لورم ایپسوم متن ساختگی با تولید سادگی </h3>
+
+                        <div class="blog-meta big-meta">
+                            <small><a href="single.html" title="">25 فروردین 1400</a></small>
+                            <small><a href="author.html" title="">به وسیله مدیریت</a></small>
+                            <small><a href="#" title=""><i class="fa fa-eye"></i> 5896</a></small>
+                        </div><!-- end meta -->
+
+
+                    </div><!-- end title -->
+
+                    <div class="single-post-media">
+                        <img src="{% static 'blogs' %}/upload/tech_menu_08.jpg" alt="" class="img-fluid">
+                    </div><!-- end media -->
+
+                    <div class="blog-content">
+                        <div class="pp">
+                            {% autoescape off %}
+                            {{ post.body }}
+                            {% endautoescape %}
+                        </div><!-- end pp -->
+                    </div><!-- end content -->
+
+                    <div class="blog-title-area">
+                        <div class="tag-cloud-single">
+                            <span>کلمات کلیدی</span>
+                            <small><a href="#" title="">نماینده شورا</a></small>
+                            <small><a href="#" title="">نماینده مجلس</a></small>
+                            <small><a href="#" title="">انتخابات</a></small>
+                            <small><a href="#" title="">شورای انتخاباتی </a></small>
+                        </div><!-- end meta -->
+
+                        <div class="post-sharing">
+                            <ul class="list-inline">
+                                <li><a href="#" class="fb-button btn btn-primary"><i class="fa fa-facebook"></i> <span
+                                        class="down-mobile">فیس بوک</span></a></li>
+                                <li><a href="#" class="tw-button btn btn-primary"><i class="fa fa-twitter"></i> <span
+                                        class="down-mobile">توییتر</span></a></li>
+                                <li><a href="#" class="gp-button btn btn-primary"><i class="fa fa-google-plus"></i></a>
+                                </li>
+                            </ul>
+                        </div><!-- end post-sharing -->
+                    </div><!-- end title -->
+
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="banner-spot clearfix">
+                                <div class="banner-img">
+                                    <img src="{% static 'blogs' %}/upload/banner_01.jpg" alt="" class="img-fluid">
+                                </div><!-- end banner-img -->
+                            </div><!-- end banner -->
+                        </div><!-- end col -->
+                    </div><!-- end row -->
+
+                    <hr class="invis1">
+{#                    <div class="custombox clearfix">#}
+                    {#                        <h4 class="small-title">نظر خودتان را ثبت کنید</h4>#}
+                    {#                        <div class="row">#}
+                    {#                            <div class="col-lg-12">#}
+                    {#                                <form class="form-wrapper">#}
+                    {#                                    <input type="text" class="form-control" placeholder="نام شما">#}
+                    {#                                    <input type="text" class="form-control" placeholder="پست الکترونیک">#}
+                    {#                                    <input type="text" class="form-control" placeholder="آدرس سایت">#}
+                    {#                                    <textarea class="form-control" placeholder="متن نظر"></textarea>#}
+                    {#                                    <button type="submit" class="btn btn-primary">ارسال نظر</button>#}
+                    {#                                </form>#}
+                    {#                            </div>#}
+                    {#                        </div>#}
+                    {#                    </div>#}
+                    <br/>
+                </div><!-- end page-wrapper -->
+            </div><!-- end col -->
+        </div><!-- end row -->
+    </div><!-- end container -->
+</section>
+
+{% endblock %}
