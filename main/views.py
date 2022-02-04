@@ -35,7 +35,6 @@ class ShowBlog(View):
         posts = blog.post_set.order_by("id")
         total_pages = int(posts.count() / posts_per_page)
         pages = range(0, total_pages + 1)
-        print(posts_per_page * page_number)
         start_point = (page_number - 1) * posts_per_page
         posts = posts[start_point: start_point + posts_per_page]
         return render(request, "blogs/index.html", {"posts": posts, "blog": blog, "pages": pages})

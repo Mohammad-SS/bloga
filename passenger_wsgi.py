@@ -1,0 +1,1 @@
+from bloga.wsgi import application

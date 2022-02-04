@@ -20,6 +20,6 @@ from . import views
 urlpatterns = [
     path("" , views.Index.as_view() , name="index"),
     path("search",views.SearchBlog.as_view() , name="search-blog"),
-    path("blogs/<str:blog_slug>" ,views.ShowBlog.as_view() , name="blog-page") ,
+    path("blogs/<str:blog_slug>/" ,views.ShowBlog.as_view() , name="blog-page") ,
     path("blogs/<str:blog_slug>/<str:post_slug>" , views.ShowPost.as_view() , name="post-page")
 ]

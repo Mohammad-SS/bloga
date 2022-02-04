@@ -26,7 +26,7 @@ SECRET_KEY = 'django-insecure-q^li)2xrt^f*qw9p0j7!=(oj66%v+^(8&p68wwmc67m8*+&q_7
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ["mag.mazimi.ir"]
 
 # Application definition
 
@@ -93,10 +93,10 @@ WSGI_APPLICATION = 'bloga.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': "tdudjonu",
-        "USER": "tdudjonu",
-        "PASSWORD": "4IXJG44_flSMS03CJ0iWrfp5koV9S4Ng",
-        "HOST": "rosie.db.elephantsql.com",
+        'NAME': "mazimii1_mag",
+        "USER": "mazimii1_blog",
+        "PASSWORD": "@mirAli89",
+        "HOST": "localhost",
         'PORT': 5432
     }
 }
