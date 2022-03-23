@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+    <title>زنیکس</title>
+    <!-- Favicon icon -->
+    {% load static %}
+    <link href="{% static 'accounts' %}/vendor/bootstrap-select/dist/css/bootstrap-select.min.css" rel="stylesheet"
+          type="text/css"/>
+    <link href="{% static 'accounts' %}/css/style.css" rel="stylesheet" type="text/css"/>
+    <link href="{% static 'accounts' %}/css/custom.css" rel="stylesheet" type="text/css"/>
+
+    {% block post_custom_css %}
+
+    {% endblock %}
+    <link href="{% static 'accounts' %}/vendor/datatables/css/jquery.dataTables.min.css" rel="stylesheet"
+          type="text/css"/>
+
+</head>
+
+<body>
+<!--*******************
+Preloader start
+********************-->
+<div id="preloader">
+    <div class="sk-three-bounce">
+        <div class="sk-child sk-bounce1"></div>
+        <div class="sk-child sk-bounce2"></div>
+        <div class="sk-child sk-bounce3"></div>
+    </div>
+</div>
+<!--*******************
+Preloader end
+********************-->
+
+<!--**********************************
+Main wrapper start
+***********************************-->
+<div id="main-wrapper">
+    <div class="deznav">
+        <div class="deznav-scroll">
+            <div class="main-profile">
+                <h5 class="name"><span class="font-w400">سلام</span> {{ profile.full_name }}</h5>
+                <a href="{% url 'accounts:logout' %}">
+                    <p class="email" style="color:#5c1c18">خروج</p>
+                </a>
+            </div>
+            <ul class="metismenu" id="menu">
+                <li class="nav-label first">منوی اصلی</li>
+                <li>
+                    <a class="has-arrow ai-icon" href="javascript:void()" aria-expanded="false">
+                        <i class="flaticon-144-layout"></i>
+                        <span class="nav-text">داشبورد</span>
+                    </a>
+                    <ul aria-expanded="false">
+                        <li><a href="{% url 'accounts:dashboard' %}">لیست درخواست ها</a></li>
+                    </ul>
+                </li>
+                {% if blogs.count %}
+                    <li>
+                        <a class="has-arrow ai-icon" href="javascript:void()" aria-expanded="false">
+                            <i class="flaticon-144-layout"></i>
+                            <span class="nav-text">وبلاگ ها</span>
+                        </a>
+                        <ul aria-expanded="false">
+                            {% for blog in blogs %}
+                                <li><a href="{% url 'accounts:blog_page' blog_slug=blog.slug %}">{{ blog.name }}</a>
+                                </li>
+                            {% endfor %}
+
+                        </ul>
+                    </li>
+                {% endif %}
+
+            </ul>
+
+        </div>
+    </div>
+    <!--**********************************
+    Sidebar end
+***********************************-->
+
+    {% block content %}
+
+    {% endblock %}
+
+
+
+    <!--**********************************
+    Footer start
+***********************************-->
+    <div class="footer">
+        <div class="copyright">
+            <p><strong>زنیکس</strong> © 2021 کلیه حقوق محفوظ</p>
+        </div>
+    </div>
+    <!--**********************************
+    Footer end
+***********************************-->
+
+    <!--**********************************
+   Support ticket button start
+***********************************-->
+
+    <!--**********************************
+   Support ticket button end
+***********************************-->
+</div>
+<!--**********************************
+Main wrapper end
+***********************************-->
+
+<!--**********************************
+Scripts
+***********************************-->
+<!-- Required vendors -->
+<script src="{% static 'accounts' %}/vendor/global/global.min.js"></script>
+<script src="{% static 'accounts' %}/vendor/bootstrap-select/dist/js/bootstrap-select.min.js"></script>
+<script src="{% static 'accounts' %}/js/custom.min.js"></script>
+<script src="{% static 'accounts' %}/js/deznav-init.js"></script>
+<script src="{% static 'accounts' %}/js/demo.js"></script>
+{% block footer %}
+
+{% endblock %}
+</body>
+</html>

@@ -1,0 +1,109 @@
+{% extends "accounts/base.html" %}
+{% block content %}
+
+    <!--**********************************
+    Content body start
+***********************************-->
+    <div class="content-body">
+        <div class="container-fluid">
+            <div class="row page-titles mx-0">
+                <div class="col-sm-6 p-md-0">
+                    <div class="welcome-text">
+                        <h4>سلام، خوش آمدید!</h4>
+                        <span>جدول داده ها</span>
+                    </div>
+                </div>
+                <div class="col-sm-6 p-md-0 justify-content-sm-end mt-2 mt-sm-0 d-flex">
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item"><a href="javascript:void(0)">جدول</a></li>
+                        <li class="breadcrumb-item active"><a href="javascript:void(0)">جدول داده ها</a></li>
+                    </ol>
+                </div>
+            </div>
+            <!-- row -->
+
+            <div class="row">
+                <div class="col-12">
+                    <div class="card">
+                        <div class="card-header">
+                            <div class="col col-lg-4">
+                                <h4 class="card-title">پست های وبلاگ '{{ blog.name }}'</h4>
+                            </div>
+                            <div class="col col-lg-4 text-right">
+                                <a href="{% url 'accounts:new_post' blog_slug=blog.slug %}">
+                                    <button class="btn btn-success">پست جدید</button>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <div class="table-responsive">
+                                <table class="posts-table" style="width: 100%;">
+                                    <thead>
+                                    <tr>
+                                        <th>
+                                            <div class="custom-control custom-checkbox ml-2">
+                                                <input type="checkbox" class="custom-control-input" id="checkAll"
+                                                       required=""/>
+                                                <label class="custom-control-label" for="checkAll"></label>
+                                            </div>
+                                        </th>
+                                        <th>عنوان</th>
+                                        <th>تاریخ ایجاد</th>
+                                        <th>تاریخ آخرین تغییر</th>
+                                        <th style="text-align: left">عمل</th>
+                                    </tr>
+                                    </thead>
+                                    <tbody>
+                                    {% for post in posts %}
+                                        <tr>
+                                            <td>
+                                                <div class="custom-control custom-checkbox ml-2">
+                                                    <input type="checkbox" class="custom-control-input"
+                                                           id="customCheckBox2"
+                                                           required=""/>
+                                                    <label class="custom-control-label" for="customCheckBox2"></label>
+                                                </div>
+                                            </td>
+                                            <td>{{ post.title }}</td>
+                                            <td>
+                                                {{ post.persian_created_date }}
+                                            </td>
+                                            <td>
+                                                {{ post.persian_created_date }}
+                                            </td>
+                                            <td>
+                                                <div class="dropdown ml-auto text-right">
+                                                    <div class="btn-link" data-toggle="dropdown">
+                                                        <svg width="24px" height="24px" viewBox="0 0 24 24"
+                                                             version="1.1">
+                                                            <g stroke="none" stroke-width="1" fill="none"
+                                                               fill-rule="evenodd">
+                                                                <rect x="0" y="0" width="24" height="24"></rect>
+                                                                <circle fill="#000000" cx="5" cy="12" r="2"></circle>
+                                                                <circle fill="#000000" cx="12" cy="12" r="2"></circle>
+                                                                <circle fill="#000000" cx="19" cy="12" r="2"></circle>
+                                                            </g>
+                                                        </svg>
+                                                    </div>
+                                                    <div class="dropdown-menu dropdown-menu-right">
+                                                        <a class="dropdown-item"
+                                                           href="{% url 'accounts:edit_post' blog_slug=blog.slug post_id=post.id %}">ویرایش </a>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                        </tr>
+
+                                    {% endfor %}
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--**********************************
+    Content body end
+***********************************-->
+{% endblock %}

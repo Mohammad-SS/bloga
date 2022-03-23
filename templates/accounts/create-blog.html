@@ -1,0 +1,150 @@
+{% extends "accounts/base.html" %}
+{% load static %}
+
+{% block content %}
+
+    <div class="content-body" style="min-height: 774px;">
+        <div class="container-fluid">
+            <!-- Add Project -->
+            <div class="modal fade" id="addProjectSidebar">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title">ایجاد پروژه</h5>
+                            <button type="button" class="close" data-dismiss="modal"><span>×</span></button>
+                        </div>
+                        <div class="modal-body">
+                            <form>
+                                <div class="form-group">
+                                    <label class="text-black font-w500">نام پروژه</label>
+                                    <input type="text" class="form-control">
+                                </div>
+                                <div class="form-group">
+                                    <label class="text-black font-w500">ضرب الاجل</label>
+                                    <input type="date" class="form-control">
+                                </div>
+                                <div class="form-group">
+                                    <label class="text-black font-w500">نام مشتری</label>
+                                    <input type="text" class="form-control">
+                                </div>
+                                <div class="form-group">
+                                    <button type="button" class="btn btn-primary">ايجاد كردن</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row page-titles mx-0">
+                <div class="col-sm-6 p-md-0">
+                    <div class="welcome-text">
+                        <h4>سلام، خوش آمدید!</h4>
+                        <p class="mb-0">الگوی داشبورد کسب و کار شما</p>
+                    </div>
+                </div>
+                <div class="col-sm-6 p-md-0 justify-content-sm-end mt-2 mt-sm-0 d-flex">
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item"><a href="javascript:void(0)">صفحه اصلی</a></li>
+                        <li class="breadcrumb-item active"><a href="javascript:void(0)">اجزاء</a></li>
+                    </ol>
+                </div>
+            </div>
+            <!-- row -->
+            <div class="row">
+                <div class="col-xl-12 col-xxl-12">
+                    <div class="card">
+                        <div class="card-header">
+                            <h4 class="card-title">ثبت وبلاگ جدید</h4>
+                        </div>
+                        <div class="card-body">
+                            <form method="post" action="" enctype="multipart/form-data">
+                                <div class="row">
+
+                                    <div class="col col-lg-4">
+
+                                        <div class="form-group">
+                                            <label class="text-label">
+                                                نام وبلاگ
+                                            </label>
+                                            <input class="form-control" name="blog-name">
+                                            <small>این نام جهت دسترسی شما مورد استفاده قرار خواهد گرفت</small>
+                                        </div>
+                                    </div>
+                                    <div class="col col-lg-4">
+
+                                        <div class="form-group">
+                                            <label class="text-label">
+                                                نامک سایت
+                                            </label>
+                                            <input class="form-control" name="slug">
+                                            <small style="direction: ltr ; text-align: justify">نامک آدرس وبلاگ شما
+                                                خواهد بود . این نام نمیتواند تکراری باشد. وبلاگ شما به آدرس
+                                                mag.mazimi.ir/{نام انتخابی شما} در دسترس قرار خواهد گرفت .این متن فقط
+                                                میتواند انگلیسی و حاوی اعداد باشد.</small>
+                                        </div>
+                                    </div>
+                                    <div class="col col-lg-4">
+
+                                        <div class="form-group">
+                                            <label class="text-label">
+                                                تیتر
+                                            </label>
+                                            <input class="form-control" name="title">
+                                            <small>تیتر وبلاگ شما - این تیتر در تمامی قسمت ها نمایش داده خواهد
+                                                شد.</small>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="row">
+                                    <div class="col col-lg-4">
+                                        <div class="form-group">
+                                            <label class="text-label">
+                                                بنر
+                                            </label>
+                                            <input class="form-control" type="file" name="banner">
+                                            <small>این بنر در بالای سایت شما قرارخواهد گرفت . این تصویر بعدا قابل تغییر
+                                                خواهد بود اما نیاز به تایید مدیریت دارد . سایز عکس میبایست 3000 در 600
+                                                پیکسل باشد.</small>
+                                        </div>
+                                    </div>
+                                    <div class="col col-lg-4">
+                                        <div class="form-group">
+                                            <label class="text-label">
+                                                توضیحات
+                                            </label>
+                                            <textarea class="form-control" name="descriptions">
+                                            </textarea>
+                                            <small>این توضیحات به عنوان خلاصه از چرایی وجود سایت شما به تمامی کاربران
+                                                نمایش داده خواهد شد.</small>
+
+                                        </div>
+                                    </div>
+                                    <div class="col col-lg-4">
+                                        <div class="form-group">
+                                            <label class="text-label">
+                                                اطلاعات اضافه
+                                            </label>
+                                            <textarea class="form-control" name="user-note">
+                                            </textarea>
+                                            <small>این متن فقط برای مدیریت نمایش داده خواهد شد . در صورتی که توضیحات اضافه ای از قبل وحود دارد میتوانید در این قسمت وارد کنید.</small>
+
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="row">
+                                    <div class="col col-lg-12 text-center">
+                                        <button class="btn btn-primary" type="submit">ارسال درخواست</button>
+                                    </div>
+                                </div>
+                                {% csrf_token %}
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+{% endblock %}

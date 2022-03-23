@@ -1,0 +1,95 @@
+{% extends "main/base.html" %}
+{% block content %}
+
+    <!-- Content -->
+    <section id="content">
+        <!-- Content Row -->
+        <section class="content-row content-row-color content-row-clouds">
+            <div class="container">
+                <header class="content-header content-header-small content-header-uppercase">
+                    <h1>
+                        ثبت نام خبرگزاری جدید
+                    </h1>
+                    <p>
+                        میتوانید برای ثبت خبرگزاری جدید درخواست بفرستید . پس از تایید اطلاعات شما توسط کارشناسان ما ،
+                        حساب شما فعال خواهد شد .
+                    </p>
+                </header>
+            </div>
+        </section>
+        <!-- Content Row -->
+        <section class="content-row">
+            <div class="container">
+                <div class="row">
+                    <div class="col col-lg-12">
+                        {% if errors %}
+                            <p style="text-align: center ; color:red">
+                                {{ errors }}
+                            </p>
+                        {% endif %}
+                    </div>
+                </div>
+            <div class="row">
+                    <div class="col col-lg-12">
+                        {% if success %}
+                            <h2 style="text-align: center ; color:green">
+                                {{ success }}
+                            </h2>
+                        {% endif %}
+                    </div>
+                </div>
+            {% if not success %}
+                <div class="column-row align-center">
+                    <div class="column-50">
+                        <form class="form-full-width" method="post" action="">
+                            {% csrf_token %}
+                            <div class="form-row">
+                                <label for="name">نام و نام خانوادگی</label>
+                                <input id="name" type="text" name="name">
+                            </div>
+                            <div class="form-row">
+                                <label for="form-email">آدرس ایمیل</label>
+                                <input id="form-email" type="text" name="email">
+                            </div>
+                            <div class="form-row">
+                                <label for="form-mobile">شماره موبایل</label>
+                                <input id="form-mobile" type="tel" name="mobile">
+                            </div>
+                            <div class="form-row">
+                                <label for="form-password">رمزعبور</label>
+                                <input id="form-password" type="password" name="password">
+                            </div>
+                            <div class="form-row">
+                                <label for="national_id">کد ملی</label>
+                                <input id="national_id" type="tel" name="national_id">
+                            </div>
+                            <div class="form-row">
+                                <input id="terms" type="checkbox" name="terms" checked>
+                                <label for="terms">تمامی قوانین و مقررات سایت را خوانده و می پذیرم</label>
+                            </div>
+                            <div class="form-row">
+                                <button class="button-secondary"><i class="fa fa-user-plus icon-left"></i> ثبت نام
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+                {% endif %}
+        <!-- Content Row -->
+        <section class="content-row content-row-gray">
+            <div class="container">
+                <div class="column-row align-center">
+                    <div class="column-50 text-align-center">
+                        <p class="text-color-gray">
+                            برای ورود به سیستم حساب خود مشکلی دارید؟<br>
+                            <a href="client-login.html">تنظیم مجدد رمز عبور<i class="fas fa-angle-right icon-right"></i></a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </section>
+
+{% endblock %}

@@ -10,16 +10,18 @@
         <!-- Content Row -->
         <section id="alternative-extensions" class="content-row content-row-gray">
             <div class="container">
-                <header class="content-header">
-                    <h2>
-                        خبرگزاری های مشابه آنچه جست و جو کردید
-                    </h2>
-                    <p>
-                        با توجه به آنچه جست و جو کردید ، وبلاگ های زیر پیدا شدند .برای جست و جوی بهتر ، میتوانید از نام
-                        کوتاه تر هیئت یا بنیاد مورد نظر استفاده کنید.
-                    </p>
-                </header>
                 {% if blogs.count %}
+
+                    <header class="content-header">
+                        <h2>
+                            خبرگزاری های مشابه آنچه جست و جو کردید
+                        </h2>
+                        <p>
+                            با توجه به آنچه جست و جو کردید ، وبلاگ های زیر پیدا شدند .برای جست و جوی بهتر ، میتوانید از
+                            نام
+                            کوتاه تر هیئت یا بنیاد مورد نظر استفاده کنید.
+                        </p>
+                    </header>
                     <table class="table-layout-domain">
                         {% for blog in blogs %}
                             <tr>
@@ -29,10 +31,11 @@
                                     </h4>
                                 </td>
                                 <td class="highlight">
-                                    {{ blog.post_set.count }} پست
+                                    {{ blog.posts.count }} پست
                                 </td>
                                 <td>
-                                    <a class="button button-secondary" href="">
+                                    <a class="button button-secondary"
+                                       href="{% url 'main:blog-page' blog_slug=blog.slug %}">
                                         مشاهده وبلاگ
                                     </a>
                                 </td>

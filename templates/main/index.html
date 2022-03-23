@@ -20,10 +20,10 @@
                 <div class="container">
                     <header class="content-header">
                         <h2>
-                            آخری پست های ارسال شده
+                            آخرین پست های ارسال شده
                         </h2>
                         <p>
-                            روزانه +100 پست در خبرگزاری های ما بارگزاری میشوند . میتوانید 5 پست آخری که ارسال شده اند را
+                            روزانه +100 پست در خبرگزاری های ما بارگزاری میشوند . میتوانید 3 پست آخری که ارسال شده اند را
                             مشاهده
                             نمایید.
                         </p>
@@ -34,12 +34,13 @@
                             <div class="column-33">
                                 <div class="testimonial">
                                     <p class="testimonial-content">
-                                        {{ last_post.body | slice:50 }}
+                                        {{ last_post.summary |striptags }}
+
                                     </p>
                                     <p class="testimonial-author">
                                 <span style="color:#1CA3F1"><i
                                         class="fa fa-calendar icon-left"></i>{{ last_post.persian_created_date }}<br></span>
-                                        <a href="{% url 'blog-page' blog_slug=last_post.blog.slug %}"><small> {{ last_post.blog.title}} </small></a>
+                                        <a href="{% url 'main:blog-page' blog_slug=last_post.blog.slug %}"><small> {{ last_post.blog.title }} </small></a>
                                     </p>
                                 </div>
                             </div>

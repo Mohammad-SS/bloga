@@ -1,0 +1,134 @@
+{% extends "accounts/base.html" %}
+{% load static %}
+{% block content %}
+
+    <!--**********************************
+    Content body start
+    ***********************************-->
+    <div class="content-body">
+        <div class="container-fluid">
+            <!-- Add Project -->
+            <div class="modal fade" id="addProjectSidebar">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title">ایجاد پروژه</h5>
+                            <button type="button" class="close" data-dismiss="modal"><span>×</span></button>
+                        </div>
+                        <div class="modal-body">
+                            <form>
+                                <div class="form-group">
+                                    <label class="text-black font-w500">نام پروژه</label>
+                                    <input type="text" class="form-control"/>
+                                </div>
+                                <div class="form-group">
+                                    <label class="text-black font-w500">ضرب الاجل</label>
+                                    <input type="date" class="form-control"/>
+                                </div>
+                                <div class="form-group">
+                                    <label class="text-black font-w500">نام مشتری</label>
+                                    <input type="text" class="form-control"/>
+                                </div>
+                                <div class="form-group">
+                                    <button type="button" class="btn btn-primary">ايجاد كردن</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row page-titles mx-0">
+                <div class="col-sm-6 p-md-0">
+                    <div class="welcome-text">
+                        <h4>سلام، خوش آمدید!</h4>
+                        <span>پست الکترونیک</span>
+                    </div>
+                </div>
+                <div class="col-sm-6 p-md-0 justify-content-sm-end mt-2 mt-sm-0 d-flex">
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item"><a href="javascript:void(0)">پست الکترونیک</a></li>
+                        <li class="breadcrumb-item active"><a href="javascript:void(0)">ساختن</a></li>
+                    </ol>
+                </div>
+            </div>
+            <!-- row -->
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="card">
+                        <div class="card-body">
+
+
+                            <div class="compose-content">
+                                <form action="" enctype="multipart/form-data" method="post">
+                                    <div class="form-group">
+                                        <input type="text" class="form-control bg-transparent"
+                                               placeholder=" تیتر:" name="title"/>
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="text" class="form-control bg-transparent"
+                                               placeholder=" نامک:" name="slug"/>
+                                        <small>این نام برای آدرس دهی در وبلاگ شما استفاده خواهد شد . در صورتی که نامک
+                                            قبلا به پست دیگری در همین وبلاگ اختصاص داده شده باشد ، عدد 1 به پایان آن
+                                            اضافه خواهد
+                                            شد.</small>
+                                    </div>
+                                    <div class="form-group">
+                                        <textarea id="summary-compose-editor"
+                                                  class="textarea_editor form-control bg-transparent" rows="2"
+                                                  name="summary"
+                                                  placeholder="خلاصه ای برای این متن بنویسید ..."></textarea>
+                                    </div>
+                                    <div class="form-group">
+                                        <textarea id="post-compose-editor"
+                                                  class="textarea_editor form-control bg-transparent" rows="25"
+                                                  name="body"
+                                                  placeholder="بدنه پست خود را وارد کنید ..."></textarea>
+                                    </div>
+                                    {% csrf_token %}
+                                    <div class="fallback">
+                                        <h5 class="mb-4"><i class="fa fa-paperclip"></i> تصویر شاخص</h5>
+                                        <input name="thumb" type="file"/>
+                                    </div>
+
+                            </div>
+                            <div class="text-left mt-4 mb-3">
+                                <button class="btn btn-primary btn-sl-sm mr-2" type="submit">
+                                    <span class="mr-2"><i class="fa fa-paper-plane"></i></span>ایجاد
+                                </button>
+
+                            </div>
+                            </form>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    <!--**********************************
+    Content body end
+    ***********************************-->
+{% endblock %}
+
+{% block footer %}
+    <script src="{% static 'accounts' %}/vendor/js/tinymce/tinymce.min.js"></script>
+    <script>
+        tinymce.init({
+            selector: '#post-compose-editor',
+            directionality: "rtl",
+            language: "fa",
+            plugins: "image imagetools",
+            images_upload_url: "{% url 'main:new_pic' %}",
+            automatic_uploads: true
+        });
+        tinymce.init({
+            selector: '#summary-compose-editor',
+            directionality: "rtl",
+            language: "fa",
+            height: "150",
+            menubar: "",
+            toolbar: false
+        });
+    </script>
+{% endblock %}

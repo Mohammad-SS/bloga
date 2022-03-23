@@ -11,7 +11,7 @@
 
     <!-- Site Metas -->
     <title>{% block title %}
-
+        {{ blog.title }} - {{ post.title }}
     {% endblock %} </title>
     <meta name="keywords" content="">
     <meta name="description" content="">
@@ -53,15 +53,19 @@
 <body>
 
 <div id="wrapper">
-    <div class="topheada">
-        <div class="container">
-            <div class="row ">
+    {% if blog.banner.url %}
+        <div class="topheada" style="background-image: url('{{ blog.banner.url }}')">
+    {% else %}
+        <div class="topheada" style="background-image: url('{% static 'blogs/' %}/images/head.jpg'">
+    {% endif %}
+    <div class="container">
+        <div class="row ">
 
-                <div class="col-lg-12 ">
+            <div class="col-lg-12 ">
 
-                </div>
             </div>
         </div>
+    </div>
     </div>
     <header class="tech-header header">
 
@@ -75,10 +79,10 @@
             <div class="collapse navbar-collapse" id="navbarCollapse">
                 <ul class="navbar-nav mr-auto">
                     <li class="nav-item">
-                        <a class="nav-link" href="index.html">صفحه نخست</a>
+                        <a class="nav-link" href="{% url 'main:blog-page' blog_slug=blog.slug %}">صفحه نخست</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="category-08.html">پرداخت</a>
+{#                        <a class="nav-link" href="category-08.html">پرداخت</a>#}
                     </li>
 
                 </ul>
@@ -100,7 +104,9 @@
                             </h2>
                         </div>
                         <div class="col-lg-4">
-                            <div class="copyright">تمامی حقوق برای<a href="#"> کاندیدای محترم </a>محفوظ است.</div>
+                            <div class="copyright">تمامی حقوق برای<a href="https://farzaneganpub.ir"> انتشارات
+                                فرزانگان </a>محفوظ است.
+                            </div>
 
                         </div>
                         <div class="col-lg-4">
@@ -113,16 +119,16 @@
     </footer><!-- end footer --><!-- end footer -->
     <div class="dmtop">بالا</div>
 
-</div><!-- end wrapper -->
+    </div><!-- end wrapper -->
 
-<!-- Core JavaScript
-================================================== -->
-<script src="{% static 'blogs' %}/js/jquery.min.js"></script>
-<script src="{% static 'blogs' %}/js/tether.min.js"></script>
-<script src="{% static 'blogs' %}/js/bootstrap.min.js"></script>
-<script src="{% static 'blogs' %}/js/custom.js"></script>
-{% block optional-js %}
+    <!-- Core JavaScript
+    ================================================== -->
+    <script src="{% static 'blogs' %}/js/jquery.min.js"></script>
+    <script src="{% static 'blogs' %}/js/tether.min.js"></script>
+    <script src="{% static 'blogs' %}/js/bootstrap.min.js"></script>
+    <script src="{% static 'blogs' %}/js/custom.js"></script>
+    {% block optional-js %}
 
-{% endblock %}
+    {% endblock %}
 </body>
 </html>

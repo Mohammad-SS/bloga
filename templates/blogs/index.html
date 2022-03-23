@@ -1,6 +1,7 @@
 {% extends "blogs/base.html" %}
 {% load static %}
 
+
 {% block title %}
     {{ blog.title }}
 {% endblock %}
@@ -21,19 +22,29 @@
                                 <div class="blog-box row">
                                     <div class="col-md-4">
                                         <div class="post-media">
-                                            <a href="single.html" title="">
-                                                <img src="{% static 'blogs' %}/upload/tech_blog_01.jpg" alt=""
-                                                     class="img-fluid">
+                                            <a href="{% url 'main:post-page' blog_slug=blog.slug post_slug=post.slug %}"
+                                               title="">
+                                                {% if post.image %}
+                                                    <img src="{{ post.image.url }}" alt="" class="img-fluid">
+                                                {% else %}
+                                                    <img src="{% static 'blogs' %}/images/default-post-thumb.jpg" alt=""
+                                                         class="img-fluid">
+
+                                                {% endif %}
+
                                                 <div class="hovereffect"></div>
                                             </a>
                                         </div><!-- end media -->
                                     </div><!-- end col -->
 
                                     <div class="blog-meta big-meta col-md-8">
-                                        <h4><a href="single.html" title="">{{ post.title }}</a>
+                                        <h4><a href="{% url 'main:post-page' blog_slug=blog.slug post_slug=post.slug %}"
+                                               title="">{{ post.title }}</a>
                                         </h4>
                                         <p>
-                                            {{ post.body|slice:225 }} ...
+                                            {% autoescape off %}
+                                                {{ post.summary }} ...
+                                            {% endautoescape %}
                                         </p>
                                         {#                                        <small class="firstsmall"><a class="bg-green" href="category-01.html" title="">انتخابات</a></small>#}
                                         <small><a href="single.html"
@@ -56,7 +67,7 @@
 
                                     {% for page in pages %}
                                         <li class="page-item"><a class="page-link"
-                                                                 href="{% url 'blog-page' blog_slug=blog.slug %}?page={{ page|add:1 }}">{{ page|add:1 }}</a>
+                                                                 href="{% url 'main:blog-page' blog_slug=blog.slug %}?page={{ page|add:1 }}">{{ page|add:1 }}</a>
                                         </li>
                                     {% endfor %}
                                     <li class="page-item">

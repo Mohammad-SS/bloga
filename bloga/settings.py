@@ -26,7 +26,7 @@ SECRET_KEY = 'django-insecure-q^li)2xrt^f*qw9p0j7!=(oj66%v+^(8&p68wwmc67m8*+&q_7
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ["mag.mazimi.ir"]
+ALLOWED_HOSTS = ["mag.mazimi.ir" , "*"]
 
 # Application definition
 
@@ -86,21 +86,27 @@ TEMPLATES = [
 ]
 
 WSGI_APPLICATION = 'bloga.wsgi.application'
-
+LOGIN_URL = "/accounts/login"
 # Database
 # https://docs.djangoproject.com/en/4.0/ref/settings/#databases
 
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': "mazimii1_mag",
-        "USER": "mazimii1_blog",
-        "PASSWORD": "@mirAli89",
+        'NAME': "magzine",
+        "USER": "postgres",
+        "PASSWORD": "1482326",
         "HOST": "localhost",
         'PORT': 5432
     }
 }
 
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.sqlite3',
+#         'NAME': 'mydatabase',
+#     }
+# }
 # Password validation
 # https://docs.djangoproject.com/en/4.0/ref/settings/#auth-password-validators
 
@@ -137,6 +143,10 @@ STATIC_URL = '/static/'
 STATICFILES_DIRS = [
     BASE_DIR / "static",
 ]
+
+MEDIA_ROOT = os.path.join(BASE_DIR , "media")
+MEDIA_URL = "/media/"
+SITE_URL = "http://localhost:8000"
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.0/ref/settings/#default-auto-field
 

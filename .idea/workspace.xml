@@ -1,9 +1,474 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="99f4fcc5-de68-4c64-b036-ddc32714d563" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/bloga.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
+    <list default="true" id="67056832-38a1-48d7-b4ba-62a43af3bf37" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/accounts/helper.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/accounts/migrations/0011_blog_admin_notes_blog_user_notes_alter_blog_profile_and_more.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/accounts/migrations/0012_blog_name.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/accounts/migrations/0013_alter_post_created_date_alter_post_modified_date.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/accounts/migrations/0014_post_summary.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/accounts/urls.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/head.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/8/1401/1/head.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/8/1401/1/head_6zSsmLw.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/8/1401/1/head_ByvaPyJ.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/8/1401/1/head_CNZqaJh.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/8/1401/1/head_FgSRN2j.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/8/1401/1/head_G37QD88.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/8/1401/1/head_GIG4qdP.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/8/1401/1/head_J8xCtjK.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/8/1401/1/head_KpBhU54.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/8/1401/1/head_PJZNTDq.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/8/1401/1/head_U7NcDGM.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/8/1401/1/head_gGq0fE1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/8/1401/1/head_h12THZP.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/8/1401/1/head_r9FZUkI.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/8/1401/1/head_zC4mjHp.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/8/1401/1/nowrooz banner mob.jpg (1).jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/8/1401/1/nowrooz banner.jpg (1).jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/8/1401/1/tech_menu_08.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/blogs/09212518775/1401/1/head.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/blogs/09212518775/1401/1/head_Ia6POUr.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/blogs/first-one/1484.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/blogs/first-one/post_images/tech_menu_08.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/blogs/second-blog/head.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/accounts/css/custom.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/accounts/css/style.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/accounts/fonts/Iran-Yekan/eot/iranyekanwebblackfanum.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/accounts/fonts/Iran-Yekan/eot/iranyekanwebboldfanum.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/accounts/fonts/Iran-Yekan/eot/iranyekanwebextraboldfanum.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/accounts/fonts/Iran-Yekan/eot/iranyekanweblightfanum.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/accounts/fonts/Iran-Yekan/eot/iranyekanwebmediumfanum.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/accounts/fonts/Iran-Yekan/eot/iranyekanwebregularfanum.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/accounts/fonts/Iran-Yekan/ttf/iranyekanwebblackfanum.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/accounts/fonts/Iran-Yekan/ttf/iranyekanwebboldfanum.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/accounts/fonts/Iran-Yekan/ttf/iranyekanwebextraboldfanum.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/accounts/fonts/Iran-Yekan/ttf/iranyekanweblightfanum.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/accounts/fonts/Iran-Yekan/ttf/iranyekanwebmediumfanum.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/accounts/fonts/Iran-Yekan/ttf/iranyekanwebregularfanum.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/accounts/fonts/Iran-Yekan/woff/iranyekanwebblackfanum.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/accounts/fonts/Iran-Yekan/woff/iranyekanwebboldfanum.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/accounts/fonts/Iran-Yekan/woff/iranyekanwebextraboldfanum.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/accounts/fonts/Iran-Yekan/woff/iranyekanweblightfanum.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/accounts/fonts/Iran-Yekan/woff/iranyekanwebmediumfanum.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/accounts/fonts/Iran-Yekan/woff/iranyekanwebregularfanum.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/accounts/fonts/iransans/eot/IRANSansWeb.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/accounts/fonts/iransans/eot/IRANSansWeb_Black.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/accounts/fonts/iransans/eot/IRANSansWeb_Bold.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/accounts/fonts/iransans/eot/IRANSansWeb_Light.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/accounts/fonts/iransans/eot/IRANSansWeb_Medium.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/accounts/fonts/iransans/eot/IRANSansWeb_UltraLight.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/accounts/fonts/iransans/ttf/IRANSansWeb.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/accounts/fonts/iransans/ttf/IRANSansWeb_Black.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/accounts/fonts/iransans/ttf/IRANSansWeb_Bold.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/accounts/fonts/iransans/ttf/IRANSansWeb_Light.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/accounts/fonts/iransans/ttf/IRANSansWeb_Medium.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/accounts/fonts/iransans/ttf/IRANSansWeb_UltraLight.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/accounts/fonts/iransans/woff/IRANSansWeb.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/accounts/fonts/iransans/woff/IRANSansWeb_Black.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/accounts/fonts/iransans/woff/IRANSansWeb_Bold.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/accounts/fonts/iransans/woff/IRANSansWeb_Light.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/accounts/fonts/iransans/woff/IRANSansWeb_Medium.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/accounts/fonts/iransans/woff/IRANSansWeb_UltraLight.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/accounts/fonts/iransans/woff2/IRANSansWeb.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/accounts/fonts/iransans/woff2/IRANSansWeb_Black.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/accounts/fonts/iransans/woff2/IRANSansWeb_Bold.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/accounts/fonts/iransans/woff2/IRANSansWeb_Light.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/accounts/fonts/iransans/woff2/IRANSansWeb_Medium.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/accounts/fonts/iransans/woff2/IRANSansWeb_UltraLight.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/accounts/icons/avasta/css/style.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/accounts/icons/avasta/fonts/avasta.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/accounts/icons/avasta/fonts/avasta.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/accounts/icons/avasta/fonts/avasta.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/accounts/icons/avasta/fonts/avasta.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/accounts/icons/avasta/fonts/avasta.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/accounts/icons/flaticon-1/Flaticon_1.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/accounts/icons/flaticon-1/Flaticon_1.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/accounts/icons/flaticon-1/Flaticon_1.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/accounts/icons/flaticon-1/Flaticon_1.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/accounts/icons/flaticon-1/Flaticon_1d41d.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/accounts/icons/flaticon-1/flaticon_1.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/accounts/icons/flaticon/Flaticon.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/accounts/icons/flaticon/Flaticon.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/accounts/icons/flaticon/Flaticon.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/accounts/icons/flaticon/Flaticon.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/accounts/icons/flaticon/Flaticond41d.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/accounts/icons/flaticon/flaticon.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/accounts/icons/font-awesome-old/css/font-awesome.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/accounts/icons/font-awesome-old/fonts/fontawesome-webfont3e6e3e6e.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/accounts/icons/font-awesome-old/fonts/fontawesome-webfont3e6e3e6e.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/accounts/icons/font-awesome-old/fonts/fontawesome-webfont3e6e3e6e.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/accounts/icons/font-awesome-old/fonts/fontawesome-webfont3e6e3e6e.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/accounts/icons/font-awesome-old/fonts/fontawesome-webfont3e6e3e6e.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/accounts/icons/font-awesome-old/fonts/fontawesome-webfontd41dd41d.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/accounts/icons/icomoon/fonts/icomoon.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/accounts/icons/icomoon/fonts/icomoon.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/accounts/icons/icomoon/fonts/icomoon.svg.readme" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/accounts/icons/icomoon/fonts/icomoon.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/accounts/icons/icomoon/fonts/icomoon.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/accounts/icons/icomoon/icomoon.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/accounts/icons/line-awesome/css/line-awesome.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/accounts/icons/line-awesome/fonts/la-brands-400.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/accounts/icons/line-awesome/fonts/la-brands-400.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/accounts/icons/line-awesome/fonts/la-brands-400.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/accounts/icons/line-awesome/fonts/la-brands-400.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/accounts/icons/line-awesome/fonts/la-brands-400.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/accounts/icons/line-awesome/fonts/la-brands-400d41d.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/accounts/icons/line-awesome/fonts/la-regular-400.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/accounts/icons/line-awesome/fonts/la-regular-400.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/accounts/icons/line-awesome/fonts/la-regular-400.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/accounts/icons/line-awesome/fonts/la-regular-400.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/accounts/icons/line-awesome/fonts/la-regular-400.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/accounts/icons/line-awesome/fonts/la-regular-400d41d.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/accounts/icons/line-awesome/fonts/la-solid-900.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/accounts/icons/line-awesome/fonts/la-solid-900.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/accounts/icons/line-awesome/fonts/la-solid-900.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/accounts/icons/line-awesome/fonts/la-solid-900.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/accounts/icons/line-awesome/fonts/la-solid-900.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/accounts/icons/line-awesome/fonts/la-solid-900d41d.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/accounts/icons/material-design-iconic-font/css/materialdesignicons.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/accounts/icons/material-design-iconic-font/fonts/materialdesignicons-webfont683c.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/accounts/icons/material-design-iconic-font/fonts/materialdesignicons-webfont683c.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/accounts/icons/material-design-iconic-font/fonts/materialdesignicons-webfont683c.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/accounts/icons/material-design-iconic-font/fonts/materialdesignicons-webfont683c.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/accounts/icons/material-design-iconic-font/fonts/materialdesignicons-webfont683c.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/accounts/icons/material-design-iconic-font/fonts/materialdesignicons-webfontd41d.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/accounts/icons/simple-line-icons/css/simple-line-icons.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/accounts/icons/simple-line-icons/fonts/Simple-Line-Icons4c824c82.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/accounts/icons/simple-line-icons/fonts/Simple-Line-Icons4c824c82.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/accounts/icons/simple-line-icons/fonts/Simple-Line-Icons4c824c82.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/accounts/icons/simple-line-icons/fonts/Simple-Line-Icons4c824c82.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/accounts/icons/simple-line-icons/fonts/Simple-Line-Icons4c824c82.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/accounts/icons/simple-line-icons/fonts/Simple-Line-Iconsd41dd41d.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/accounts/icons/themify-icons/css/themify-icons.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/accounts/icons/themify-icons/fonts/themify.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/accounts/icons/themify-icons/fonts/themify.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/accounts/icons/themify-icons/fonts/themify9f249f24.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/accounts/icons/themify-icons/fonts/themify9f249f24.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/accounts/icons/themify-icons/fonts/themifyd41dd41d.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/accounts/images/1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/accounts/images/Untitled-1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/accounts/images/avatar/1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/accounts/images/avatar/1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/accounts/images/avatar/2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/accounts/images/avatar/3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/accounts/images/avatar/4.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/accounts/images/avatar/5.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/accounts/images/avatar/5.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/accounts/images/avatar/6.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/accounts/images/avatar/7.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/accounts/images/avatar/8.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/accounts/images/big/img1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/accounts/images/big/img2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/accounts/images/big/img3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/accounts/images/big/img4.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/accounts/images/big/img5.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/accounts/images/big/img6.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/accounts/images/big/img7.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/accounts/images/big/img8.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/accounts/images/body/12.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/accounts/images/card/1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/accounts/images/card/2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/accounts/images/card/3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/accounts/images/card/card1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/accounts/images/card/card2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/accounts/images/card/card3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/accounts/images/card/card4.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/accounts/images/chat-bg.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/accounts/images/contacts/Untitled-1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/accounts/images/contacts/Untitled-2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/accounts/images/contacts/Untitled-3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/accounts/images/contacts/Untitled-4.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/accounts/images/contacts/Untitled-5.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/accounts/images/contacts/user.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/accounts/images/demo/pic1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/accounts/images/demo/pic2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/accounts/images/demo/pic3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/accounts/images/demo/pic4.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/accounts/images/demo/pic5.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/accounts/images/demo/pic6.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/accounts/images/demo/pic7.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/accounts/images/demo/pic8.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/accounts/images/favicon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/accounts/images/logo-full.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/accounts/images/logo-text.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/accounts/images/logo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/accounts/images/logos/pic1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/accounts/images/logos/pic2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/accounts/images/pattern/pattern5.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/accounts/images/product/1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/accounts/images/product/2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/accounts/images/product/3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/accounts/images/product/4.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/accounts/images/product/5.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/accounts/images/product/6.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/accounts/images/product/7.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/accounts/images/profile/1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/accounts/images/profile/2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/accounts/images/profile/3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/accounts/images/profile/4.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/accounts/images/profile/5.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/accounts/images/profile/6.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/accounts/images/profile/7.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/accounts/images/profile/8.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/accounts/images/profile/9.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/accounts/images/profile/Untitled-2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/accounts/images/profile/cover.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/accounts/images/profile/pic1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/accounts/images/profile/port.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/accounts/images/profile/profile.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/accounts/images/profile/small/pic1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/accounts/images/profile/small/pic10.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/accounts/images/profile/small/pic2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/accounts/images/profile/small/pic3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/accounts/images/profile/small/pic4.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/accounts/images/profile/small/pic5.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/accounts/images/profile/small/pic6.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/accounts/images/profile/small/pic7.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/accounts/images/profile/small/pic8.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/accounts/images/profile/small/pic9.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/accounts/images/qr.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/accounts/images/svg/btc1.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/accounts/images/svg/cd-arrow.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/accounts/images/svg/check.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/accounts/images/svg/eth2.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/accounts/images/svg/lit3.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/accounts/images/svg/monero.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/accounts/images/tab/1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/accounts/images/tab/2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/accounts/images/tab/3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/accounts/images/tab/4.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/accounts/images/table/Untitled-1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/accounts/images/table/Untitled-2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/accounts/images/table/Untitled-3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/accounts/images/table/Untitled-4.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/accounts/images/users/pic1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/accounts/images/users/pic2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/accounts/images/users/pic3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/accounts/images/users/pic4.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/accounts/images/users/pic5.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/accounts/images/users/pic6.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/accounts/images/users/pic7.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/accounts/images/users/pic8.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/accounts/js/custom.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/accounts/js/dashboard/chat.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/accounts/js/dashboard/coin-details.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/accounts/js/dashboard/contact.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/accounts/js/dashboard/dashboard-1.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/accounts/js/dashboard/market-capital.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/accounts/js/dashboard/my-wallet.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/accounts/js/dashboard/portofolio.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/accounts/js/demo.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/accounts/js/deznav-init.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/accounts/js/plugins-init/bs-daterange-picker-init.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/accounts/js/plugins-init/chartist-init.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/accounts/js/plugins-init/chartjs-init.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/accounts/js/plugins-init/clock-picker-init.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/accounts/js/plugins-init/datatables.init.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/accounts/js/plugins-init/flot-init.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/accounts/js/plugins-init/fullcalendar-init.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/accounts/js/plugins-init/jquery-asColorPicker.init.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/accounts/js/plugins-init/jquery.validate-init.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/accounts/js/plugins-init/jqvmap-init.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/accounts/js/plugins-init/material-date-picker-init.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/accounts/js/plugins-init/morris-init.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/accounts/js/plugins-init/nestable-init.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/accounts/js/plugins-init/nouislider-init.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/accounts/js/plugins-init/pickadate-init.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/accounts/js/plugins-init/piety-init.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/accounts/js/plugins-init/select2-init.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/accounts/js/plugins-init/sparkline-init.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/accounts/js/plugins-init/summernote-init.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/accounts/js/plugins-init/sweetalert.init.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/accounts/js/plugins-init/toastr-init.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/accounts/js/plugins-init/widgets-script-init.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/accounts/js/styleSwitcher.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/accounts/vendor/animate/animate.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/accounts/vendor/aos/css/aos.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/accounts/vendor/apexchart/apexchart.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/accounts/vendor/bootstrap-daterangepicker/daterangepicker.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/accounts/vendor/bootstrap-daterangepicker/daterangepicker.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/accounts/vendor/bootstrap-material-datetimepicker/css/bootstrap-material-datetimepicker.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/accounts/vendor/bootstrap-material-datetimepicker/js/bootstrap-material-datetimepicker.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/accounts/vendor/chart.js/Chart.bundle.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/accounts/vendor/chartist-plugin-tooltips/js/chartist-plugin-tooltip.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/accounts/vendor/chartist/css/chartist.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/accounts/vendor/chartist/js/chartist.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/accounts/vendor/clockpicker/css/bootstrap-clockpicker.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/accounts/vendor/clockpicker/js/bootstrap-clockpicker.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/accounts/vendor/datatables/css/jquery.dataTables.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/accounts/vendor/datatables/images/sort_asc.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/accounts/vendor/datatables/images/sort_asc_disabled.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/accounts/vendor/datatables/images/sort_both.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/accounts/vendor/datatables/images/sort_desc.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/accounts/vendor/datatables/images/sort_desc_disabled.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/accounts/vendor/datatables/js/jquery.dataTables.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/accounts/vendor/deznav/deznav.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/accounts/vendor/flot-spline/jquery.flot.spline.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/accounts/vendor/flot/jquery.flot.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/accounts/vendor/flot/jquery.flot.pie.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/accounts/vendor/flot/jquery.flot.resize.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/accounts/vendor/fullcalendar/css/fullcalendar.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/accounts/vendor/fullcalendar/css/main.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/accounts/vendor/fullcalendar/js/fa.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/accounts/vendor/fullcalendar/js/fullcalendar.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/accounts/vendor/fullcalendar/js/main.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/accounts/vendor/global/global.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/accounts/vendor/highlightjs/highlight.pack.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/accounts/vendor/jquery-asColor/jquery-asColor.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/accounts/vendor/jquery-asColorPicker/css/asColorPicker.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/accounts/vendor/jquery-asColorPicker/images/alpha.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/accounts/vendor/jquery-asColorPicker/images/hue.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/accounts/vendor/jquery-asColorPicker/images/saturation.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/accounts/vendor/jquery-asColorPicker/images/transparent.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/accounts/vendor/jquery-asColorPicker/js/jquery-asColorPicker.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/accounts/vendor/jquery-asGradient/jquery-asGradient.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/accounts/vendor/jquery-sparkline/jquery.sparkline.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/accounts/vendor/jquery-validation/jquery.validate.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/accounts/vendor/jqvmap/css/jqvmap.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/accounts/vendor/jqvmap/js/jquery.vmap.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/accounts/vendor/jqvmap/js/jquery.vmap.usa.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/accounts/vendor/jqvmap/js/jquery.vmap.world.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/accounts/vendor/js/tinymce/icons/default/icons.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/accounts/vendor/js/tinymce/langs/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/accounts/vendor/js/tinymce/langs/fa.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/accounts/vendor/js/tinymce/license.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/accounts/vendor/js/tinymce/models/dom/model.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/accounts/vendor/js/tinymce/plugins/advlist/plugin.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/accounts/vendor/js/tinymce/plugins/anchor/plugin.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/accounts/vendor/js/tinymce/plugins/autolink/plugin.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/accounts/vendor/js/tinymce/plugins/autoresize/plugin.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/accounts/vendor/js/tinymce/plugins/autosave/plugin.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/accounts/vendor/js/tinymce/plugins/charmap/plugin.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/accounts/vendor/js/tinymce/plugins/code/plugin.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/accounts/vendor/js/tinymce/plugins/codesample/plugin.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/accounts/vendor/js/tinymce/plugins/directionality/plugin.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/accounts/vendor/js/tinymce/plugins/emoticons/js/emojiimages.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/accounts/vendor/js/tinymce/plugins/emoticons/js/emojiimages.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/accounts/vendor/js/tinymce/plugins/emoticons/js/emojis.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/accounts/vendor/js/tinymce/plugins/emoticons/js/emojis.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/accounts/vendor/js/tinymce/plugins/emoticons/plugin.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/accounts/vendor/js/tinymce/plugins/fullscreen/plugin.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/accounts/vendor/js/tinymce/plugins/help/plugin.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/accounts/vendor/js/tinymce/plugins/image/plugin.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/accounts/vendor/js/tinymce/plugins/importcss/plugin.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/accounts/vendor/js/tinymce/plugins/insertdatetime/plugin.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/accounts/vendor/js/tinymce/plugins/link/plugin.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/accounts/vendor/js/tinymce/plugins/lists/plugin.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/accounts/vendor/js/tinymce/plugins/media/plugin.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/accounts/vendor/js/tinymce/plugins/nonbreaking/plugin.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/accounts/vendor/js/tinymce/plugins/pagebreak/plugin.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/accounts/vendor/js/tinymce/plugins/preview/plugin.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/accounts/vendor/js/tinymce/plugins/quickbars/plugin.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/accounts/vendor/js/tinymce/plugins/save/plugin.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/accounts/vendor/js/tinymce/plugins/searchreplace/plugin.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/accounts/vendor/js/tinymce/plugins/table/plugin.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/accounts/vendor/js/tinymce/plugins/template/plugin.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/accounts/vendor/js/tinymce/plugins/visualblocks/plugin.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/accounts/vendor/js/tinymce/plugins/visualchars/plugin.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/accounts/vendor/js/tinymce/plugins/wordcount/plugin.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/accounts/vendor/js/tinymce/skins/content/dark/content.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/accounts/vendor/js/tinymce/skins/content/default/content.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/accounts/vendor/js/tinymce/skins/content/document/content.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/accounts/vendor/js/tinymce/skins/content/tinymce-5-dark/content.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/accounts/vendor/js/tinymce/skins/content/tinymce-5/content.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/accounts/vendor/js/tinymce/skins/content/writer/content.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/accounts/vendor/js/tinymce/skins/ui/oxide-dark/content.inline.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/accounts/vendor/js/tinymce/skins/ui/oxide-dark/content.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/accounts/vendor/js/tinymce/skins/ui/oxide-dark/skin.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/accounts/vendor/js/tinymce/skins/ui/oxide-dark/skin.shadowdom.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/accounts/vendor/js/tinymce/skins/ui/oxide/content.inline.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/accounts/vendor/js/tinymce/skins/ui/oxide/content.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/accounts/vendor/js/tinymce/skins/ui/oxide/skin.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/accounts/vendor/js/tinymce/skins/ui/oxide/skin.shadowdom.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/accounts/vendor/js/tinymce/skins/ui/tinymce-5-dark/content.inline.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/accounts/vendor/js/tinymce/skins/ui/tinymce-5-dark/content.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/accounts/vendor/js/tinymce/skins/ui/tinymce-5-dark/skin.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/accounts/vendor/js/tinymce/skins/ui/tinymce-5-dark/skin.shadowdom.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/accounts/vendor/js/tinymce/skins/ui/tinymce-5/content.inline.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/accounts/vendor/js/tinymce/skins/ui/tinymce-5/content.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/accounts/vendor/js/tinymce/skins/ui/tinymce-5/skin.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/accounts/vendor/js/tinymce/skins/ui/tinymce-5/skin.shadowdom.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/accounts/vendor/js/tinymce/themes/silver/theme.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/accounts/vendor/js/tinymce/tinymce.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/accounts/vendor/js/tinymce/tinymce.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/accounts/vendor/lightgallery/css/lightgallery.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/accounts/vendor/lightgallery/fonts/lgd41d.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/accounts/vendor/lightgallery/fonts/lgd641.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/accounts/vendor/lightgallery/fonts/lgd641.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/accounts/vendor/lightgallery/fonts/lgd641.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/accounts/vendor/lightgallery/fonts/lgd641.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/accounts/vendor/lightgallery/img/loading.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/accounts/vendor/lightgallery/img/video-play.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/accounts/vendor/lightgallery/img/vimeo-play.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/accounts/vendor/lightgallery/img/youtube-play.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/accounts/vendor/lightgallery/js/lightgallery-all.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/accounts/vendor/metismenu/css/metisMenu.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/accounts/vendor/moment/moment-jalaali.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/accounts/vendor/moment/moment.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/accounts/vendor/morris/morris.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/accounts/vendor/nestable2/css/jquery.nestable.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/accounts/vendor/nestable2/js/jquery.nestable.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/accounts/vendor/nouislider/nouislider.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/accounts/vendor/nouislider/nouislider.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/accounts/vendor/owl-carousel/owl.carousel.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/accounts/vendor/owl-carousel/owl.carousel.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/accounts/vendor/owl-carousel/owl.video.play.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/accounts/vendor/peity/jquery.peity.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/accounts/vendor/perfect-scrollbar/css/perfect-scrollbar.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/accounts/vendor/pickadate/picker.date.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/accounts/vendor/pickadate/picker.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/accounts/vendor/pickadate/picker.time.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/accounts/vendor/pickadate/themes/default.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/accounts/vendor/pickadate/themes/default.date.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/accounts/vendor/raphael/raphael.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/accounts/vendor/select2/css/select2.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/accounts/vendor/select2/js/select2.full.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/accounts/vendor/star-rating/jquery.star-rating-svg.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/accounts/vendor/star-rating/star-rating-svg.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/accounts/vendor/summernote/font/summernote.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/accounts/vendor/summernote/font/summernote.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/accounts/vendor/summernote/font/summernote.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/accounts/vendor/summernote/font/summernote.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/accounts/vendor/summernote/font/summernoted41d.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/accounts/vendor/summernote/js/summernote.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/accounts/vendor/summernote/summernote.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/accounts/vendor/svganimation/svg.animation.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/accounts/vendor/svganimation/vivus.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/accounts/vendor/swiper/css/swiper-bundle.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/accounts/vendor/swiper/js/swiper-bundle.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/accounts/vendor/toastr/css/toastr.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/accounts/vendor/toastr/js/toastr.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/accounts/vendor/wnumb/wNumb.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/blogs/images/default-post-thumb.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/accounts/base.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/accounts/blog_page.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/accounts/blog_posts.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/accounts/blogs.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/accounts/create-blog.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/accounts/delete_post.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/accounts/edit_post.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/accounts/new_post.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/main/login.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/main/signup-complted.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/accounts/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/accounts/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/accounts/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/accounts/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bloga/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/bloga/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bloga/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/bloga/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blogs/first-site/how-to-draw-a-ghost-step-by-step.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/media/blogs/first-site/how-to-draw-a-ghost-step-by-step.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blogs/testi-blog/logo.png" beforeDir="false" afterPath="$PROJECT_DIR$/media/testi-blog/logo.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/main/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/main/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/blogs/css/css.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/blogs/css/css.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/blogs/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/blogs/base.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/blogs/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/blogs/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/blogs/single.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/blogs/single.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/main/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/main/base.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/main/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/main/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/main/search-blog-section.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/main/search-blog-section.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/main/show-search-result.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/main/show-search-result.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -12,6 +477,15 @@
   </component>
   <component name="DjangoConsoleOptions" custom-start-script="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)">
     <option name="myCustomStartScript" value="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="CSS File" />
+        <option value="HTML File" />
+        <option value="Python Script" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -27,36 +501,56 @@
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
-  <component name="ProjectId" id="23v0ttLJ1GXXv9GN4bHCpWuuE0i" />
+  <component name="ProjectId" id="26fRIxc3itejeCg5TCuoAIjhYwp" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/static/accounts" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Mohammad\Projects\Bloga\static\accounts" />
+      <recent name="C:\Users\Mohammad\Projects\Bloga\static\blogs\images" />
+      <recent name="C:\Users\Mohammad\Projects\Bloga\templates\accounts" />
+      <recent name="C:\Users\Mohammad\Projects\Bloga\static\accounts\vendor\js\tinymce\langs" />
+      <recent name="C:\Users\Mohammad\Projects\Bloga\static\accounts\vendor" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Mohammad\Projects\Bloga\media\blogs" />
+      <recent name="C:\Users\Mohammad\Projects\Bloga\media" />
+    </key>
   </component>
   <component name="RunManager">
     <configuration name="Bloga" type="Python.DjangoServer" factoryName="Django server">
-      <module name="bloga" />
+      <module name="Bloga" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
         <env name="DJANGO_SETTINGS_MODULE" value="bloga.settings" />
       </envs>
-      <option name="SDK_HOME" value="" />
+      <option name="SDK_HOME" value="C:\Users\Mohammad\Projects\Bloga\venv\Scripts\python.exe" />
       <option name="WORKING_DIRECTORY" value="" />
-      <option name="IS_MODULE_SDK" value="true" />
+      <option name="IS_MODULE_SDK" value="false" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="launchJavascriptDebuger" value="false" />
       <option name="port" value="8000" />
-      <option name="host" value="" />
+      <option name="host" value="127.0.0.1" />
       <option name="additionalOptions" value="" />
-      <option name="browserUrl" value="" />
+      <option name="browserUrl" value="http://127.0.0.1:8000/" />
       <option name="runTestServer" value="false" />
       <option name="runNoReload" value="false" />
       <option name="useCustomRunCommand" value="false" />
@@ -67,19 +561,35 @@
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="99f4fcc5-de68-4c64-b036-ddc32714d563" name="Changes" comment="" />
-      <created>1642599474311</created>
+      <changelist id="67056832-38a1-48d7-b4ba-62a43af3bf37" name="Changes" comment="" />
+      <created>1647812584596</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1642599474311</updated>
-      <workItem from="1642599477107" duration="1213000" />
-      <workItem from="1642882741850" duration="797000" />
-      <workItem from="1643373131866" duration="3670000" />
-      <workItem from="1643964480130" duration="5165000" />
+      <updated>1647812584596</updated>
+      <workItem from="1647812588330" duration="1609000" />
+      <workItem from="1647891967797" duration="7868000" />
+      <workItem from="1647948881133" duration="2869000" />
+      <workItem from="1647959807026" duration="13511000" />
+      <workItem from="1648028573791" duration="3634000" />
+      <workItem from="1648052966907" duration="12927000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
   </component>
 </project>
